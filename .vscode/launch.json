@@ -13,9 +13,9 @@
       "request": "launch",
       "preLaunchTask": "build",
       "OS-COMMENT4": "If you have changed target frameworks, make sure to update the program path.",
-      "program": "${workspaceFolder}/src/deep.ifood.api.Presentation/bin/Debug/net5.0/deep.ifood.api.Presentation.dll",
+      "program": "${workspaceFolder}/src/deep.wefood.api.Presentation/bin/Debug/net5.0/deep.wefood.api.Presentation.dll",
       "args": [],
-      "cwd": "${workspaceFolder}/src/deep.ifood.api.Presentation",
+      "cwd": "${workspaceFolder}/src/deep.wefood.api.Presentation",
       "stopAtEntry": false,
       "OS-COMMENT5": "Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser",
       "serverReadyAction": {
