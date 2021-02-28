@@ -44,16 +44,6 @@ namespace deep.wefood.api.Services
             return company;
         }
 
-        public IEnumerable<User> FindUsers(string companyGuid)
-        {
-            var company = _companyRepository.Query(company => company.Guid == companyGuid).FirstOrDefault();
-
-            if (company == null)
-                throw new System.Exception("Company not found");
-
-            return company.Usuarios;
-        }
-
         public void Update(Company newCompany)
         {
             var oldCompany = _companyRepository.Query(user => user.Guid == newCompany.Guid).FirstOrDefault();

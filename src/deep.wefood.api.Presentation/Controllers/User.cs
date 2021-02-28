@@ -17,9 +17,8 @@ namespace deep.wefood.api.Presentation
         private IServiceUser _serviceUser;
         private IMapper _mapper;
 
-        public UserController(IServiceUser serviceUser, IServiceCompany serviceCompany, IMapper mapper)
+        public UserController(IServiceUser serviceUser, IMapper mapper)
         {
-            _serviceCompany = serviceCompany;
             _serviceUser = serviceUser;
             _mapper = mapper;
         }
@@ -36,7 +35,7 @@ namespace deep.wefood.api.Presentation
         [Route("~/company/{companyGuid}/users"), HttpGet]
         public IActionResult GetByCompany(string companyGuid)
         {
-            var users = _serviceCompany.FindUsers(companyGuid);
+            var users = _serviceUser.FindByCompany(companyGuid);
             var dto = _mapper.Map<IEnumerable<UserDto>>(users);
             return dto != null ? Ok(JsonConvert.SerializeObject(dto)) : NoContent();
         }

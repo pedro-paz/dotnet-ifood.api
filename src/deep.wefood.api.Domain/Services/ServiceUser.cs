@@ -1,6 +1,7 @@
 ﻿using deep.wefood.api.Domain.Entities;
 using deep.wefood.api.Domain.Interfaces.Generics;
 using deep.wefood.api.Interfaces.Services;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace deep.wefood.api.Services
@@ -34,6 +35,17 @@ namespace deep.wefood.api.Services
             return _userRepository.Query(x =>
               x.Guid.ToLower() == guid.ToLower()
             ).FirstOrDefault();
+        }
+
+        public IEnumerable<User> FindByCompany(string companyGuid)
+        {
+            var company = _companyRepository.Query(company => company.Guid == companyGuid).FirstOrDefault();
+#if DEBUG
+#endif
+            if (company == null)
+                throw new System.Exception("Company not found");
+
+            return company.Usuarios;
         }
 
         public void Update(User newUser)

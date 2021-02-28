@@ -10,7 +10,6 @@ namespace deep.wefood.api.Interfaces.Services
         void Update(Company newCompany);
         void Delete(string guid);
         void Add(Company company);
-        IEnumerable<User> FindUsers(string companyGuid);
         void SaveChanges();
     }
 }
