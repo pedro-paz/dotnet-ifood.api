@@ -1,8 +1,8 @@
-using System.Threading.Tasks;
-using deep.wefood.api.Domain.Entities;
 using deep.wefood.api.Interfaces.Services;
+using deep.wefood.api.Presentation.Dto;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+
 
 namespace deep.wefood.api.Presentation
 {
@@ -25,9 +25,20 @@ namespace deep.wefood.api.Presentation
         }
 
         [HttpPost("{value}")]
-        public IActionResult Post([FromBody] User value)
+        public IActionResult Post([FromBody] UserDto value)
         {
+            return Ok();
+        }
 
+        [HttpDelete("{value}")]
+        public IActionResult Put([FromBody] UserDto value)
+        {
+            return Ok();
+        }
+
+        [HttpDelete("{guid}")]
+        public IActionResult Delete(string guid)
+        {
             return Ok();
         }
     }
