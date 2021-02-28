@@ -6,8 +6,8 @@ namespace deep.wefood.api.Domain.Interfaces.Generics
 {
     public interface IRepository<T> where T : BaseEntity
     {
-        T Add(T entity);
-        T Update(T entity);
+        void Add(T entity);
+        void Update(T entity);
         T FindById(int id);
         void Delete(T entity);
         void SaveChanges();

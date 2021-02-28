@@ -13,10 +13,9 @@ namespace deep.wefood.api.Infrastructure.Repositories
     {
         public PostgresContext Db = new PostgresContext();
 
-        public TEntity Add(TEntity obj)
+        public void Add(TEntity obj)
         {
             Db.Set<TEntity>().Add(obj);
-            return obj;
         }
 
         public void Dispose()
@@ -44,10 +43,9 @@ namespace deep.wefood.api.Infrastructure.Repositories
             Db.Remove(obj);
         }
 
-        public TEntity Update(TEntity obj)
+        public void Update(TEntity obj)
         {
             Db.Entry(obj).State = EntityState.Modified;
-            return obj;
         }
 
         public void SaveChanges()

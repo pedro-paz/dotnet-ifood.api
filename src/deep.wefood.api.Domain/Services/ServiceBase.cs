@@ -14,37 +14,32 @@ namespace deep.wefood.api.Services
             _repository = repository;
         }
 
-        public T Add(T entity)
+        public virtual void Add(T entity)
         {
             _repository.Add(entity);
-            _repository.SaveChanges();
-            return entity;
         }
 
-        public T FindById(int id)
+        public virtual T FindById(int id)
         {
             return _repository.Query(x => x.Id == id).FirstOrDefault();
         }
 
-        public T Update(T entity)
+        public virtual void Update(T entity)
         {
             _repository.Update(entity);
-            _repository.SaveChanges();
-            return entity;
         }
 
-        public void Delete(T entity)
+        public virtual void Delete(T entity)
         {
             _repository.Delete(entity);
-            _repository.SaveChanges();
         }
 
-        public IEnumerable<T> Query(Func<T, bool> predicate)
+        public virtual IEnumerable<T> Query(Func<T, bool> predicate)
         {
             return _repository.Query(predicate);
         }
 
-        public IEnumerable<T> FindAll()
+        public virtual IEnumerable<T> FindAll()
         {
             return _repository.FindAll();
         }
