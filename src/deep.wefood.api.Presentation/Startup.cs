@@ -1,3 +1,6 @@
+using System;
+using System.Linq;
+using AutoMapper;
 using deep.wefood.api.Domain.Interfaces.Generics;
 using deep.wefood.api.Infrastructure.Repositories;
 using deep.wefood.api.Interfaces.Services;
@@ -28,12 +31,24 @@ namespace deep.wefood.api.Presentation
             services.AddScoped(typeof(IServiceClient), typeof(ServiceClient));
             services.AddScoped(typeof(IServiceOrder), typeof(ServiceOrder));
             services.AddScoped(typeof(IServiceIngredient), typeof(ServiceIngredient));
+            services.AddScoped(typeof(IServiceCompany), typeof(ServiceCompany));
             services.AddScoped(typeof(IServiceUser), typeof(ServiceUser));
             services.AddControllers();
+            services.AddRouting(options => options.LowercaseUrls = true);
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "deep.wefood.api.Presentation", Version = "v1" });
             });
+            services.AddSingleton(new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfiles(
+                    AppDomain.CurrentDomain.GetAssemblies()
+                        .Where(x => x.FullName.Contains("deep."))
+                        .Select(x => x.GetTypes().Where(type => type.IsClass && type.IsSubclassOf(typeof(Profile))))
+                        .SelectMany(x => x)
+                        .Select(x => Activator.CreateInstance(x) as Profile).ToList()
+                );
+            }).CreateMapper());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
