@@ -17,7 +17,7 @@ namespace deep.wefood.api.Services
             _companyRepository = companyRepository;
         }
 
-        public User Auth(string email, string senha)
+        public User Authenticate(string email, string senha)
         {
             var user = _userRepository.Query(x =>
               x.Email.Trim().ToLower() == email?.Trim().ToLower() &&
@@ -40,8 +40,7 @@ namespace deep.wefood.api.Services
         public IEnumerable<User> FindByCompany(string companyGuid)
         {
             var company = _companyRepository.Query(company => company.Guid == companyGuid).FirstOrDefault();
-#if DEBUG
-#endif
+
             if (company == null)
                 throw new System.Exception("Company not found");
 

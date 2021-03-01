@@ -7,7 +7,7 @@ namespace deep.wefood.api.Interfaces.Services
 {
     public interface IServiceUser
     {
-        User Auth(string email, string password);
+        User Authenticate(string email, string password);
         User FindByGuid(string guid);
         IEnumerable<User> FindByCompany(string companyGuid);
         void Update(User User);
