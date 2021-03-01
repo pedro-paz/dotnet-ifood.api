@@ -32,7 +32,7 @@ namespace deep.wefood.api.Presentation
             return dto != null ? Ok(JsonConvert.SerializeObject(dto)) : NoContent();
         }
 
-        [Route("~/company/{companyGuid}/users"), HttpGet]
+        [HttpGet, Route("~/company/{companyGuid}/users")]
         public IActionResult GetByCompany(string companyGuid)
         {
             var users = _serviceUser.FindByCompany(companyGuid);
@@ -51,7 +51,7 @@ namespace deep.wefood.api.Presentation
         #endregion
 
         #region PUT
-        [HttpDelete("{value}")]
+        [HttpPut]
         public IActionResult Put(UserDto value)
         {
             var user = _mapper.Map<User>(value);
