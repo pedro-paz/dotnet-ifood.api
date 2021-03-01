@@ -6,7 +6,8 @@ namespace deep.wefood.api.Interfaces.Services
 {
     public interface IServiceIngredient
     {
-        IEnumerable<Ingredient> FindByProduto(Product produto);
+        IEnumerable<Ingredient> FindByProduct(string productGuid);
         Ingredient FindByGuid(string guid);
+        void Add(Ingredient ingredient);
     }
 }
