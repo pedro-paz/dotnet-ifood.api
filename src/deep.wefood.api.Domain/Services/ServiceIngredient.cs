@@ -19,12 +19,12 @@ namespace deep.wefood.api.Services
 
         public void Add(Ingredient ingredient)
         {
-            var product = _productRepository.Query(x => x.Guid == ingredient.Produto?.Guid).FirstOrDefault();
+            var product = _productRepository.Query(x => x.Guid == ingredient.Product?.Guid).FirstOrDefault();
 
             if (product == null)
                 throw new System.Exception("Product not found");
 
-            product.Ingredientes.Add(ingredient);
+            product.Ingredients.Add(ingredient);
             _productRepository.SaveChanges();
         }
 
@@ -55,8 +55,22 @@ namespace deep.wefood.api.Services
             if (product == null)
                 throw new System.Exception("Product not found");
 
-            return product.Ingredientes;
+            return product.Ingredients;
 
+        }
+
+        public void Update(Ingredient ingredient)
+        {
+            var entity = _ingredientRepository.Query(x => x.Guid == ingredient.Guid).FirstOrDefault();
+
+            if (entity == null)
+                throw new System.Exception("Ingredient not found");
+
+            entity.Name = ingredient.Name;
+            entity.Description = ingredient.Description;
+
+            _ingredientRepository.Update(entity);
+            _ingredientRepository.SaveChanges();
         }
     }
 }

@@ -21,7 +21,7 @@ namespace deep.wefood.api.Services
         {
             var user = _userRepository.Query(x =>
               x.Email.Trim().ToLower() == email?.Trim().ToLower() &&
-              x.Senha.Trim().ToLower() == senha?.Trim().ToLower()
+              x.Password.Trim().ToLower() == senha?.Trim().ToLower()
             ).FirstOrDefault();
 
             if (user == null)
@@ -37,16 +37,6 @@ namespace deep.wefood.api.Services
             ).FirstOrDefault();
         }
 
-        public IEnumerable<User> FindByCompany(string companyGuid)
-        {
-            var company = _companyRepository.Query(company => company.Guid == companyGuid).FirstOrDefault();
-
-            if (company == null)
-                throw new System.Exception("Company not found");
-
-            return company.Usuarios;
-        }
-
         public void Update(User newUser)
         {
             var oldUser = _userRepository.Query(user => user.Guid == newUser.Guid).FirstOrDefault();
@@ -55,7 +45,7 @@ namespace deep.wefood.api.Services
                 throw new System.Exception("User not found");
 
             oldUser.Email = newUser.Email;
-            oldUser.Nome = newUser.Nome;
+            oldUser.Name = newUser.Name;
 
             _userRepository.Update(oldUser);
             _userRepository.SaveChanges();
@@ -74,13 +64,8 @@ namespace deep.wefood.api.Services
 
         public void Add(User user)
         {
-            var company = _companyRepository.Query(x => x.Guid == user.Empresa?.Guid).FirstOrDefault();
-
-            if (company == null)
-                throw new System.Exception("Company not found");
-
-            company.Usuarios.Add(user);
-            _companyRepository.SaveChanges();
+            _userRepository.Add(user);
+            _userRepository.SaveChanges();
         }
     }
 }

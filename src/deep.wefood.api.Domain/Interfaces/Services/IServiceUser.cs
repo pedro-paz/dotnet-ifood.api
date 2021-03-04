@@ -9,7 +9,6 @@ namespace deep.wefood.api.Interfaces.Services
     {
         User Authenticate(string email, string password);
         User FindByGuid(string guid);
-        IEnumerable<User> FindByCompany(string companyGuid);
         void Update(User User);
         void Delete(string guid);
         void Add(User user);

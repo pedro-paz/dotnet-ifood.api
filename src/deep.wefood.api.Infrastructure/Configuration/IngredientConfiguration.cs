@@ -5,22 +5,22 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace deep.wefood.api.Infrastructure.Configuration
 {
-    public class IngredienteConfiguration : IEntityTypeConfiguration<Ingredient>
+    public class IngredientConfiguration : IEntityTypeConfiguration<Ingredient>
     {
         public void Configure(EntityTypeBuilder<Ingredient> builder)
         {
-            builder.ToTable("ingredientes");
+            builder.ToTable("ingredients");
 
             builder.HasKey(x => x.Id);
 
-            //Foreign Key
-            builder.HasOne(x => x.Empresa)
+            //Foreign Keys
+            builder.HasOne(x => x.Company)
                 .WithMany()
-                .HasForeignKey(x => x.IdEmpresa);
+                .HasForeignKey(x => x.IdCompany);
 
-            builder.HasOne(x => x.Produto)
-                .WithMany(x => x.Ingredientes)
-                .HasForeignKey(x => x.IdProduto);
+            builder.HasOne(x => x.Product)
+                .WithMany(x => x.Ingredients)
+                .HasForeignKey(x => x.IdProduct);
 
             //Columns
             builder.Property(x => x.Guid)
@@ -32,20 +32,24 @@ namespace deep.wefood.api.Infrastructure.Configuration
                 .HasColumnName("ing_id")
                 .IsRequired();
 
-            builder.Property(x => x.Nome)
-                .HasColumnName("ing_nome")
+            builder.Property(x => x.IdProduct)
+                .HasColumnName("ing_prodid")
                 .IsRequired();
 
-            builder.Property(x => x.Descricao)
+            builder.Property(x => x.Name)
+                .HasColumnName("ing_name")
+                .IsRequired();
+
+            builder.Property(x => x.Description)
                 .HasColumnName("ing_desc")
                 .IsRequired();
 
-            builder.Property(x => x.IdEmpresa)
-                .HasColumnName("ing_emp_id")
+            builder.Property(x => x.IdCompany)
+                .HasColumnName("ing_cmp_id")
                 .IsRequired();
 
-            builder.Property(x => x.DataCadastro)
-               .HasColumnName("ing_dt_cadastro")
+            builder.Property(x => x.RegisterDate)
+               .HasColumnName("ing_dt_register")
                .IsRequired()
                .HasDefaultValueSql("now()");
         }

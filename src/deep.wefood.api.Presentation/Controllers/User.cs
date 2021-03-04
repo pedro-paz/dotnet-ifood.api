@@ -31,21 +31,13 @@ namespace deep.wefood.api.Presentation
             var dto = _mapper.Map<UserDto>(user);
             return dto != null ? Ok(JsonConvert.SerializeObject(dto)) : NoContent();
         }
-
-        [HttpGet, Route("~/company/{companyGuid}/users")]
-        public IActionResult GetByCompany(string companyGuid)
-        {
-            var users = _serviceUser.FindByCompany(companyGuid);
-            var dto = _mapper.Map<IEnumerable<UserDto>>(users);
-            return dto != null ? Ok(JsonConvert.SerializeObject(dto)) : NoContent();
-        }
         #endregion
 
         #region POST
         public IActionResult Post([FromBody] UserDto value)
         {
             var entity = _mapper.Map<User>(value);
-            _serviceUser.Add(entity);
+            _serviceUser.Update(entity);
             return Ok();
         }
         #endregion

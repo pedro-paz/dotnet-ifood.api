@@ -45,7 +45,7 @@ namespace deep.wefood.api.Presentation.Controllers
         public IActionResult Post([FromBody] IngredientDto value)
         {
             var ingredient = _mapper.Map<Ingredient>(value);
-            _serviceIngredient.Add(ingredient);
+            _serviceIngredient.Update(ingredient);
             return Ok();
         }
         #endregion

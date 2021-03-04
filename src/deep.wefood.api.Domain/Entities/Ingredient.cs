@@ -2,13 +2,12 @@
 {
     public class Ingredient : BaseEntity
     {
-        public int IdEmpresa { get; set; }
-        public int IdProduto { get; set; }
-        public string Nome { get; set; }
+        public int IdCompany { get; set; }
+        public int IdProduct { get; set; }
+        public string Name { get; set; }
         public string Guid { get; set; }
-        public string Descricao { get; set; }
-
-        public virtual Company Empresa { get; set; }
-        public virtual Product Produto { get; set; }
+        public string Description { get; set; }
+        public virtual Company Company { get; set; }
+        public virtual Product Product { get; set; }
     }
 }

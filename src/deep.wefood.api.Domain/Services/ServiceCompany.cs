@@ -51,7 +51,7 @@ namespace deep.wefood.api.Services
             if (oldCompany == null)
                 throw new System.Exception("Company not found");
 
-            oldCompany.Nome = newCompany.Nome;
+            oldCompany.Name = newCompany.Name;
 
             _companyRepository.Update(oldCompany);
             _companyRepository.SaveChanges();

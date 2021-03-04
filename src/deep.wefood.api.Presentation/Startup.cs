@@ -28,7 +28,6 @@ namespace deep.wefood.api.Presentation
         {
             services.AddScoped(typeof(IRepository<>), typeof(PostgresRepository<>));
             services.AddScoped(typeof(IServiceProduct), typeof(ServiceProduct));
-            services.AddScoped(typeof(IServiceClient), typeof(ServiceClient));
             services.AddScoped(typeof(IServiceOrder), typeof(ServiceOrder));
             services.AddScoped(typeof(IServiceIngredient), typeof(ServiceIngredient));
             services.AddScoped(typeof(IServiceCompany), typeof(ServiceCompany));

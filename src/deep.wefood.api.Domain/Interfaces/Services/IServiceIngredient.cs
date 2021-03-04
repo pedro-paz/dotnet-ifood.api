@@ -9,5 +9,7 @@ namespace deep.wefood.api.Interfaces.Services
         IEnumerable<Ingredient> FindByProduct(string productGuid);
         Ingredient FindByGuid(string guid);
         void Add(Ingredient ingredient);
+        void Delete(string guid);
+        void Update(Ingredient ingredient);
     }
 }

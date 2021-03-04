@@ -6,7 +6,10 @@ namespace deep.wefood.api.Interfaces.Services
 {
     public interface IServiceOrder
     {
-        IEnumerable<Order> GetPedidosCliente(int idCliente);
-        IEnumerable<Order> GetPedidosRestaurante(int idRestaurante);
+        Order FindByGuid(string guid);
+        IEnumerable<Order> FindByUser(string guidUser);
+        void Add(Order order);
+        void Delete(string guidOrder);
+        void Update(Order order);
     }
 }

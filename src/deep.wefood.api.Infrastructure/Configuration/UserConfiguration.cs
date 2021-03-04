@@ -4,18 +4,18 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace deep.wefood.api.Infrastructure.Configuration
 {
-    public class UsuarioConfiguration : IEntityTypeConfiguration<User>
+    public class UserConfiguration : IEntityTypeConfiguration<User>
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.ToTable("usuarios");
+            builder.ToTable("users");
 
             builder.HasKey(x => x.Id);
 
             //Foreign Key
-            builder.HasOne(x => x.Empresa)
-                .WithMany(x => x.Usuarios)
-                .HasForeignKey(x => x.IdEmpresa);
+            builder.HasMany(x => x.Orders)
+                .WithOne(x => x.User)
+                .HasForeignKey(x => x.IdUser);
 
             //Columns
             builder.Property(x => x.Id)
@@ -27,24 +27,20 @@ namespace deep.wefood.api.Infrastructure.Configuration
               .IsRequired()
               .HasDefaultValueSql("uuid_generate_v4()");
 
-            builder.Property(x => x.IdEmpresa)
-               .HasColumnName("user_emp_id")
-               .IsRequired();
-
-            builder.Property(x => x.Nome)
-                .HasColumnName("user_nome")
+            builder.Property(x => x.Name)
+                .HasColumnName("user_name")
                 .IsRequired();
 
-            builder.Property(x => x.Senha)
-               .HasColumnName("user_senha")
+            builder.Property(x => x.Password)
+               .HasColumnName("user_password")
                .IsRequired();
 
             builder.Property(x => x.Email)
                 .HasColumnName("user_email")
                 .IsRequired();
 
-            builder.Property(x => x.DataCadastro)
-               .HasColumnName("user_dt_cadastro")
+            builder.Property(x => x.RegisterDate)
+               .HasColumnName("user_dt_register")
                .IsRequired()
                .HasDefaultValueSql("now()");
 

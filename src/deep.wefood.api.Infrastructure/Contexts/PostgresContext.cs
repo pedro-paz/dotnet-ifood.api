@@ -16,7 +16,7 @@ namespace deep.wefood.api.Infrastructure.Repositories
         {
             optionsBuilder.UseLazyLoadingProxies();
             optionsBuilder.UseNpgsql(
-                "Server=localhost;Port=5432;Database=restaurant_manager;User Id=postgres;Password=Paz030993;",
+                "Server=localhost;Port=5432;Database=wefood;User Id=postgres;Password=Paz030993;",
                 options => options.SetPostgresVersion(new Version(8, 1))
             );
             base.OnConfiguring(optionsBuilder);
@@ -26,6 +26,7 @@ namespace deep.wefood.api.Infrastructure.Repositories
         {
 
             modelBuilder.HasDefaultSchema("public");
+            modelBuilder.HasPostgresExtension("uuid-ossp");
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
         }

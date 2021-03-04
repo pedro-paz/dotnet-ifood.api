@@ -6,9 +6,10 @@ namespace deep.wefood.api.Presentation.Dto
 {
     public class IngredientDto
     {
-        public string Nome { get; set; }
+        public string Name { get; set; }
         public string Guid { get; set; }
-        public string Descricao { get; set; }
+        public string Description { get; set; }
+        public string GuidCompany { get; set; }
     }
 
     public class IngredientProfile : Profile
