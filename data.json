@@ -1,0 +1,5670 @@
+[
+  {
+    "name": "COMBO HAPPY HOUR 2",
+    "description": "- Porção Pastel Mista 9 pastéis (frango, carne seca, camarão)\n- Porção 500 gramas polenta Frita\n- Maionese Caseira\n- Refrigerante 2 litros",
+    "price": 72.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Porção Mista de Pastéis",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Porção Mista (9 pastéis)",
+            "price": 0.1,
+            "description": "9 Pastéis (frango, carne seca e camarão)"
+          }
+        ]
+      },
+      {
+        "name": "Polenta Frita 500 gramas",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Polenta Frita 500gramas",
+            "price": 0.1,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Refrigerante 2 litros",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 0.1, "description": null },
+          {
+            "name": "Coca cola Zero 2 Litros",
+            "price": 0.1,
+            "description": null
+          },
+          { "name": "Sprite 2 Litros", "price": 0.1, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "COMBO HAPPY HOUR 1",
+    "description": "- Porção Pastel Mista 9 pastéis (frango, carne seca, camarão)\n- Porção 500 gramas polenta Frita\n- Maionese Caseira",
+    "price": 60.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Porção Mista de Pastéis",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Porção Mista (9 pastéis)",
+            "price": 0.1,
+            "description": "9 Pastéis (frango, carne seca e camarão)"
+          }
+        ]
+      },
+      {
+        "name": "Polenta Frita 500 gramas",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Polenta Frita 500gramas",
+            "price": 0.1,
+            "description": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EXECUTIVO STROGONOFF DE FRANGO - 1 PESSOA",
+    "description": "150gr de strogonoff de frango, 100gr de arroz, 50 gr Batata Palha. Contém champignon\n\nPrato executivo",
+    "price": 24.9,
+    "discountPrince": 20.9,
+    "complementGroups": [
+      {
+        "name": "Descartáveis",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          { "name": "Talheres descartáveis", "price": 1.5, "description": null }
+        ]
+      },
+      {
+        "name": "Adicione ao seu pedido",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Batata frita pequena",
+            "price": 11,
+            "description": "150gramas"
+          },
+          { "name": "Pão de alho", "price": 5.5, "description": "Unidade" },
+          {
+            "name": "Salada",
+            "price": 4,
+            "description": "Porção extra (repolho, pepino, cenoura)"
+          },
+          {
+            "name": "Pastelzinho frango p - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho camarão p - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho carne seca p - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Polenta frita pequena",
+            "price": 9.9,
+            "description": "150 gramas"
+          },
+          {
+            "name": "Molho de pimenta extra",
+            "price": 2,
+            "description": "Porção extra de molho de pimenta"
+          },
+          {
+            "name": "Porção extra de maionese caseira",
+            "price": 2,
+            "description": "Porção extra de maionese"
+          }
+        ]
+      },
+      {
+        "name": "Sobremesa",
+        "min": 0,
+        "max": 19,
+        "complements": [
+          {
+            "name": "Pastéis de chocolate Branco - 2 unidades",
+            "price": 8.9,
+            "description": "2 pastéis de chocolate branco crocantes"
+          },
+          {
+            "name": "Pastéis de chocolate preto - 2 unidades",
+            "price": 8.9,
+            "description": "2 pastéis de chocolate preto crocantes"
+          },
+          {
+            "name": "Escondidinho de chocolate branco mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate preto mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Coca cola zero açucar lata",
+            "price": 5,
+            "description": null
+          },
+          { "name": "Sprite lata", "price": 5, "description": null },
+          { "name": "Fanta lata", "price": 5, "description": null },
+          { "name": "Fanta guarana lata", "price": 5, "description": null },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "COMBO HAPPY HOUR 1",
+    "description": "- Porção Pastel Mista 9 pastéis (frango, carne seca, camarão)\n- Porção 500 gramas polenta Frita\n- Maionese Caseira",
+    "price": 60.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Porção Mista de Pastéis",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Porção Mista (9 pastéis)",
+            "price": 0.1,
+            "description": "9 Pastéis (frango, carne seca e camarão)"
+          }
+        ]
+      },
+      {
+        "name": "Polenta Frita 500 gramas",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Polenta Frita 500gramas",
+            "price": 0.1,
+            "description": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "COMBO HAPPY HOUR 2",
+    "description": "- Porção Pastel Mista 9 pastéis (frango, carne seca, camarão)\n- Porção 500 gramas polenta Frita\n- Maionese Caseira\n- Refrigerante 2 litros",
+    "price": 72.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Porção Mista de Pastéis",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Porção Mista (9 pastéis)",
+            "price": 0.1,
+            "description": "9 Pastéis (frango, carne seca e camarão)"
+          }
+        ]
+      },
+      {
+        "name": "Polenta Frita 500 gramas",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Polenta Frita 500gramas",
+            "price": 0.1,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Refrigerante 2 litros",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 0.1, "description": null },
+          {
+            "name": "Coca cola Zero 2 Litros",
+            "price": 0.1,
+            "description": null
+          },
+          { "name": "Sprite 2 Litros", "price": 0.1, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ARROZ CARRETEIRO - GRANDE (SERVE 3 PESSOAS)",
+    "description": "Arroz, calabresa, bacon, carne seca, cheiro verde e cebola.\n*acompanha molho de pimenta",
+    "price": 49.9,
+    "discountPrince": null,
+    "complementGroups": []
+  },
+  {
+    "name": "ARROZ CARRETEIRO - MÉDIO (SERVE 2 PESSOAS)",
+    "description": "Arroz, calabresa, bacon, carne seca, cheiro verde e cebola.\n*acompanha molho de pimenta",
+    "price": 37.9,
+    "discountPrince": null,
+    "complementGroups": []
+  },
+  {
+    "name": "ARROZ CARRETEIRO - PEQUENO (SERVE 1 PESSOA)",
+    "description": "Arroz, calabresa, carne seca, bacon, cheiro verde e cebola.\n* acompanha molho de pimenta",
+    "price": 22.9,
+    "discountPrince": null,
+    "complementGroups": []
+  },
+  {
+    "name": "MAIONESE CASEIRA",
+    "description": "Maionese caseira extra",
+    "price": 3,
+    "discountPrince": null,
+    "complementGroups": []
+  },
+  {
+    "name": "TALHERES DESCARTÁVEIS",
+    "description": "Garfo e faca descartáveis.",
+    "price": 1.5,
+    "discountPrince": null,
+    "complementGroups": []
+  },
+  {
+    "name": "MOLHO DE PIMENTA",
+    "description": "Pote molho de pimenta extra",
+    "price": 3,
+    "discountPrince": null,
+    "complementGroups": []
+  },
+  {
+    "name": "SALADA",
+    "description": "100 gramas de salada - cenoura, pepino e repolho.",
+    "price": 4,
+    "discountPrince": null,
+    "complementGroups": []
+  },
+  {
+    "name": "BATATA FRITA",
+    "description": "Batata frita em óleo de algodão.\n*acompanha maionese caseira",
+    "price": 11.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Tamanho da porção",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Média (250 gramas)",
+            "price": 19.9,
+            "description": "250 gramas"
+          },
+          {
+            "name": "Grande (500 gramas)",
+            "price": 29.9,
+            "description": "500r"
+          },
+          {
+            "name": "Pequena (150 gramas)",
+            "price": 11.9,
+            "description": "150gr"
+          }
+        ]
+      },
+      {
+        "name": "Maionese caseira extra",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Maionese caseira extra",
+            "price": 2,
+            "description": "Maionese extra"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "BATATA FRITA COM BACON E CHEDDAR",
+    "description": "Batata frita em óleo de algodão, cobertos por queijo cheddar cremoso e bacon selecionado e frito.\n*acompanha maionese caseira",
+    "price": 25,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Tamanho da porção",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Média (250 gramas)",
+            "price": 25,
+            "description": "250 gramas"
+          },
+          {
+            "name": "Grande (500 gramas)",
+            "price": 39.9,
+            "description": "500gramas"
+          }
+        ]
+      },
+      {
+        "name": "Maionese caseira extra",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Maionese caseira extra",
+            "price": 2,
+            "description": "Porção extra"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLENTA FRITA",
+    "description": "Suculentos e crocantes toletes de polenta fritos em óleo de algodão.\n*acompanha maionese caseira",
+    "price": 9.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Tamanho da porção",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          { "name": "Grande", "price": 25.9, "description": "500gr" },
+          { "name": "Média", "price": 16.9, "description": "250gr" },
+          { "name": "Pequena", "price": 9.9, "description": "150gr" }
+        ]
+      },
+      {
+        "name": "Maionese caseira extra",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Maionese caseira extra",
+            "price": 2,
+            "description": "Maionese extra"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PÃO DE ALHO - 1UN",
+    "description": "Pão de alho, tempero especial, assado e gratinado.",
+    "price": 5.5,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Maionese caseira",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Maionese caseira",
+            "price": 2,
+            "description": "Maionese extra"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "POLENTA FRITA COM BACON E CHEDDAR",
+    "description": "Suculentos e crocantes toletes de polenta fritos em óleo de algodão, cobertos por queijo cheddar cremoso e bacon selecionado e frito.\n*acompanha maionese caseira",
+    "price": 26.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Tamanho da porção",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          { "name": "Grande", "price": 36.9, "description": "500gr" },
+          { "name": "Média", "price": 26.9, "description": "250gr" }
+        ]
+      },
+      {
+        "name": "Maionese caseira extra",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Maionese caseira extra",
+            "price": 2,
+            "description": "Porção extra"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PORÇÃO MISTA DE PASTEIZINHOS",
+    "description": "3 sabores : camarão, carne seca e frango. Suculentos e crocantes pasteis fritos no óleo da algodão.\n*acompanha maionese caseira",
+    "price": 32.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Quantidade da porção.",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Porção mista de pasteizinhos (18 unidades)",
+            "price": 56.9,
+            "description": "18 unidades - 6 de cada sabor"
+          },
+          {
+            "name": "Porção mista de pasteizinhos (9 unidades)",
+            "price": 32.9,
+            "description": "9 unidades - 3 de cada sabor"
+          }
+        ]
+      },
+      {
+        "name": "Maionese caseira extra!!!",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Maionese caseira",
+            "price": 2.5,
+            "description": "Porção extra!!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PASTELZINHO DE FRANGO",
+    "description": "Peito de frango selecionado e desfiado, tempero especial do cheff, requeijão cremoso, massa crocante, frito em óleo de algodão.\n*acompanha maionese caseira",
+    "price": 12.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Tamanho da porção",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Pastel de frango (18 unidades)",
+            "price": 39.9,
+            "description": "18 unidades"
+          },
+          {
+            "name": "Pastel de frango (9 unidades)",
+            "price": 25.9,
+            "description": "9 unidades"
+          },
+          {
+            "name": "Pastel de frango (4 unidades)",
+            "price": 12.9,
+            "description": "4 unidades"
+          }
+        ]
+      },
+      {
+        "name": "Maionese caseira - extra!",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Maionese extra",
+            "price": 2.5,
+            "description": "Porção extra"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PASTELZINHO DE CARNE SECA",
+    "description": "Carne seca selecionada e desfiada, tempero especial do cheff, requeijão cremoso, massa crocante, frito em óleo de algodão\n*acompanha maionese caseira",
+    "price": 16.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Quantidade da porção",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne seca (18 unidades)",
+            "price": 52.9,
+            "description": "18 unidades"
+          },
+          {
+            "name": "Pastelzinho de carne seca (9 unidades)",
+            "price": 29.9,
+            "description": "9 unidades"
+          },
+          {
+            "name": "Pastelzinho de carne seca (4 unidades)",
+            "price": 16.9,
+            "description": "4 unidades"
+          }
+        ]
+      },
+      {
+        "name": "Maionese caseira extra!!",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Maionese caseira - porção extra",
+            "price": 2.5,
+            "description": "Porção extra"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PASTELZINHO DE CAMARÃO",
+    "description": "Camarões selecionados, tempero especial do cheff, requeijão cremoso, massa crocante, frito em óleo de algodão.\n*acompanha maionese caseira.",
+    "price": 21.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Quantidade da porção",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Pastelzinho de camarão (18 unidades)",
+            "price": 64.9,
+            "description": "18 unidades"
+          },
+          {
+            "name": "Pastelzinho de camarão (9 unidades)",
+            "price": 41.9,
+            "description": "9 unidades"
+          },
+          {
+            "name": "Pastelzinho de camarão (4 unidades)",
+            "price": 21.9,
+            "description": "4 unidades"
+          }
+        ]
+      },
+      {
+        "name": "Maionese caseira extra!!",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Maionese caseira - porção extra",
+            "price": 2.5,
+            "description": "Porção extra"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EXECUTIVO FIT CARNE (BATATA DOCE)",
+    "description": "100gr de iscas de carne grelhada, cebola e cheiro verde, pure de batata doce, salada de pepino, cenoura e repolho.\n\nPrato executivo",
+    "price": 23.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Descartáveis",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          { "name": "Talheres descartáveis", "price": 1.5, "description": null }
+        ]
+      },
+      {
+        "name": "Adicione ao seu pedido",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Batata frita pequena",
+            "price": 11,
+            "description": "150gramas"
+          },
+          { "name": "Pão de alho", "price": 5.5, "description": "Unidade" },
+          {
+            "name": "Salada",
+            "price": 4,
+            "description": "Porção extra (repolho, pepino, cenoura)"
+          },
+          {
+            "name": "Pastelzinho frango p - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho camarão p - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho carne seca p - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Polenta frita pequena",
+            "price": 9.9,
+            "description": "150 gramas"
+          },
+          {
+            "name": "Molho de pimenta extra",
+            "price": 2,
+            "description": "Porção extra de molho de pimenta"
+          },
+          {
+            "name": "Porção extra de maionese caseira",
+            "price": 2,
+            "description": "Porção extra de maionese"
+          }
+        ]
+      },
+      {
+        "name": "Sobremesa",
+        "min": 0,
+        "max": 19,
+        "complements": [
+          {
+            "name": "Pastéis de chocolate Branco - 2 unidades",
+            "price": 8.9,
+            "description": "2 pastéis de chocolate branco crocantes"
+          },
+          {
+            "name": "Pastéis de chocolate preto - 2 unidades",
+            "price": 8.9,
+            "description": "2 pastéis de chocolate preto crocantes"
+          },
+          {
+            "name": "Escondidinho de chocolate branco mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate preto mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Coca cola zero açucar lata",
+            "price": 5,
+            "description": null
+          },
+          { "name": "Sprite lata", "price": 5, "description": null },
+          { "name": "Fanta lata", "price": 5, "description": null },
+          { "name": "Fanta guarana lata", "price": 5, "description": null },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EXECUTIVO FIT FRANGO (BATATA DOCE)",
+    "description": "100gr de iscas de frango grelhada, cebola e cheiro verde, pure de batata doce, salada de pepino, cenoura e repolho.\n\nPrato executivo",
+    "price": 20.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Descartáveis",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          { "name": "Talheres descartáveis", "price": 1.5, "description": null }
+        ]
+      },
+      {
+        "name": "Adicione ao seu pedido",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Batata frita pequena",
+            "price": 11,
+            "description": "150gramas"
+          },
+          { "name": "Pão de alho", "price": 5.5, "description": "Unidade" },
+          {
+            "name": "Salada",
+            "price": 4,
+            "description": "Porção extra (repolho, pepino, cenoura)"
+          },
+          {
+            "name": "Pastelzinho frango p - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho camarão p - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho carne seca p - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Polenta frita pequena",
+            "price": 9.9,
+            "description": "150 gramas"
+          },
+          {
+            "name": "Molho de pimenta extra",
+            "price": 2,
+            "description": "Porção extra de molho de pimenta"
+          },
+          {
+            "name": "Porção extra de maionese caseira",
+            "price": 2,
+            "description": "Porção extra de maionese"
+          }
+        ]
+      },
+      {
+        "name": "Sobremesa",
+        "min": 0,
+        "max": 19,
+        "complements": [
+          {
+            "name": "Pastéis de chocolate Branco - 2 unidades",
+            "price": 8.9,
+            "description": "2 pastéis de chocolate branco crocantes"
+          },
+          {
+            "name": "Pastéis de chocolate preto - 2 unidades",
+            "price": 8.9,
+            "description": "2 pastéis de chocolate preto crocantes"
+          },
+          {
+            "name": "Escondidinho de chocolate branco mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate preto mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Coca cola zero açucar lata",
+            "price": 5,
+            "description": null
+          },
+          { "name": "Sprite lata", "price": 5, "description": null },
+          { "name": "Fanta lata", "price": 5, "description": null },
+          { "name": "Fanta guarana lata", "price": 5, "description": null },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EXECUTIVO CARNE GRELHADA - 1 PESSOA",
+    "description": "100gr de iscas de filé de alcatra grelhada na manteiga, cebola e cheiro verde, arroz, salada de pepino, cenoura e repolho.\n\nPrato executivo!",
+    "price": 22.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Descartáveis",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          { "name": "Talheres descartáveis", "price": 1.5, "description": null }
+        ]
+      },
+      {
+        "name": "Adicione ao seu pedido",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Batata frita pequena",
+            "price": 11,
+            "description": "150gramas"
+          },
+          { "name": "Pão de alho", "price": 5.5, "description": "Unidade" },
+          {
+            "name": "Salada",
+            "price": 4,
+            "description": "Porção extra (repolho, pepino, cenoura)"
+          },
+          {
+            "name": "Pastelzinho frango p - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho camarão p - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho carne seca p - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Polenta frita pequena",
+            "price": 9.9,
+            "description": "150 gramas"
+          },
+          {
+            "name": "Molho de pimenta extra",
+            "price": 2,
+            "description": "Porção extra de molho de pimenta"
+          },
+          {
+            "name": "Porção extra de maionese caseira",
+            "price": 2,
+            "description": "Porção extra de maionese"
+          }
+        ]
+      },
+      {
+        "name": "Sobremesa",
+        "min": 0,
+        "max": 19,
+        "complements": [
+          {
+            "name": "Pastéis de chocolate Branco - 2 unidades",
+            "price": 8.9,
+            "description": "2 pastéis de chocolate branco crocantes"
+          },
+          {
+            "name": "Pastéis de chocolate preto - 2 unidades",
+            "price": 8.9,
+            "description": "2 pastéis de chocolate preto crocantes"
+          },
+          {
+            "name": "Escondidinho de chocolate branco mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate preto mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Coca cola zero açucar lata",
+            "price": 5,
+            "description": null
+          },
+          { "name": "Sprite lata", "price": 5, "description": null },
+          { "name": "Fanta lata", "price": 5, "description": null },
+          { "name": "Fanta guarana lata", "price": 5, "description": null },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EXECUTIVO FRANGO GRELHADO - 1 PESSOA",
+    "description": "100gr de iscas de frango grelhada na manteiga, cebola e cheiro verde,arroz, salada de pepino, cenoura e repolho.\n\nPrato executivo",
+    "price": 19.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Descartáveis",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          { "name": "Talheres descartáveis", "price": 1.5, "description": null }
+        ]
+      },
+      {
+        "name": "Adicione ao seu pedido",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Batata frita pequena",
+            "price": 11,
+            "description": "150gramas"
+          },
+          { "name": "Pão de alho", "price": 5.5, "description": "Unidade" },
+          {
+            "name": "Salada",
+            "price": 4,
+            "description": "Porção extra (repolho, pepino, cenoura)"
+          },
+          {
+            "name": "Pastelzinho frango p - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho camarão p - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho carne seca p - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Polenta frita pequena",
+            "price": 9.9,
+            "description": "150 gramas"
+          },
+          {
+            "name": "Molho de pimenta extra",
+            "price": 2,
+            "description": "Porção extra de molho de pimenta"
+          },
+          {
+            "name": "Porção extra de maionese caseira",
+            "price": 2,
+            "description": "Porção extra de maionese"
+          }
+        ]
+      },
+      {
+        "name": "Sobremesa",
+        "min": 0,
+        "max": 19,
+        "complements": [
+          {
+            "name": "Pastéis de chocolate Branco - 2 unidades",
+            "price": 8.9,
+            "description": "2 pastéis de chocolate branco crocantes"
+          },
+          {
+            "name": "Pastéis de chocolate preto - 2 unidades",
+            "price": 8.9,
+            "description": "2 pastéis de chocolate preto crocantes"
+          },
+          {
+            "name": "Escondidinho de chocolate branco mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate preto mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Coca cola zero açucar lata",
+            "price": 5,
+            "description": null
+          },
+          { "name": "Sprite lata", "price": 5, "description": null },
+          { "name": "Fanta lata", "price": 5, "description": null },
+          { "name": "Fanta guarana lata", "price": 5, "description": null },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EXECUTIVO STROGONOFF DE CARNE - 1 PESSOA",
+    "description": "150gr de strogonoff de carne, 100gr de arroz, 50 gr Batata Palha. Contém champignon\n\nPrato executivo",
+    "price": 23.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Descartáveis",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          { "name": "Talheres descartáveis", "price": 1.5, "description": null }
+        ]
+      },
+      {
+        "name": "Adicione ao seu pedido",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Batata frita pequena",
+            "price": 11,
+            "description": "150gramas"
+          },
+          { "name": "Pão de alho", "price": 5.5, "description": "Unidade" },
+          {
+            "name": "Salada",
+            "price": 4,
+            "description": "Porção extra (repolho, pepino, cenoura)"
+          },
+          {
+            "name": "Pastelzinho frango p - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho camarão p - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho carne seca p - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Polenta frita pequena",
+            "price": 9.9,
+            "description": "150 gramas"
+          },
+          {
+            "name": "Molho de pimenta extra",
+            "price": 2,
+            "description": "Porção extra de molho de pimenta"
+          },
+          {
+            "name": "Porção extra de maionese caseira",
+            "price": 2,
+            "description": "Porção extra de maionese"
+          }
+        ]
+      },
+      {
+        "name": "Sobremesa",
+        "min": 0,
+        "max": 19,
+        "complements": [
+          {
+            "name": "Pastéis de chocolate Branco - 2 unidades",
+            "price": 8.9,
+            "description": "2 pastéis de chocolate branco crocantes"
+          },
+          {
+            "name": "Pastéis de chocolate preto - 2 unidades",
+            "price": 8.9,
+            "description": "2 pastéis de chocolate preto crocantes"
+          },
+          {
+            "name": "Escondidinho de chocolate branco mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate preto mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Coca cola zero açucar lata",
+            "price": 5,
+            "description": null
+          },
+          { "name": "Sprite lata", "price": 5, "description": null },
+          { "name": "Fanta lata", "price": 5, "description": null },
+          { "name": "Fanta guarana lata", "price": 5, "description": null },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EXECUTIVO STROGONOFF DE FRANGO - 1 PESSOA",
+    "description": "150gr de strogonoff de frango, 100gr de arroz, 50 gr Batata Palha. Contém champignon\n\nPrato executivo",
+    "price": 24.9,
+    "discountPrince": 20.9,
+    "complementGroups": [
+      {
+        "name": "Descartáveis",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          { "name": "Talheres descartáveis", "price": 1.5, "description": null }
+        ]
+      },
+      {
+        "name": "Adicione ao seu pedido",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Batata frita pequena",
+            "price": 11,
+            "description": "150gramas"
+          },
+          { "name": "Pão de alho", "price": 5.5, "description": "Unidade" },
+          {
+            "name": "Salada",
+            "price": 4,
+            "description": "Porção extra (repolho, pepino, cenoura)"
+          },
+          {
+            "name": "Pastelzinho frango p - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho camarão p - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho carne seca p - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Polenta frita pequena",
+            "price": 9.9,
+            "description": "150 gramas"
+          },
+          {
+            "name": "Molho de pimenta extra",
+            "price": 2,
+            "description": "Porção extra de molho de pimenta"
+          },
+          {
+            "name": "Porção extra de maionese caseira",
+            "price": 2,
+            "description": "Porção extra de maionese"
+          }
+        ]
+      },
+      {
+        "name": "Sobremesa",
+        "min": 0,
+        "max": 19,
+        "complements": [
+          {
+            "name": "Pastéis de chocolate Branco - 2 unidades",
+            "price": 8.9,
+            "description": "2 pastéis de chocolate branco crocantes"
+          },
+          {
+            "name": "Pastéis de chocolate preto - 2 unidades",
+            "price": 8.9,
+            "description": "2 pastéis de chocolate preto crocantes"
+          },
+          {
+            "name": "Escondidinho de chocolate branco mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate preto mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Coca cola zero açucar lata",
+            "price": 5,
+            "description": null
+          },
+          { "name": "Sprite lata", "price": 5, "description": null },
+          { "name": "Fanta lata", "price": 5, "description": null },
+          { "name": "Fanta guarana lata", "price": 5, "description": null },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO BACON COM REQUEIJÃO",
+    "description": "Bacon selecionados frito, tempero especial do chef e coberto com requeijão cremoso.\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 32.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 69.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 51.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 32.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE BACON COM MILHO",
+    "description": "Bacon em cubos selecionados e fritos, milho verde refogado na manteiga e tempero especial do cheff.\nacompanha - porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado\ncom cremosa camada de queijo mussarela gratinado.\ntodos os pratos contém cebola e cheiro verde.\npara retirar algum item favor especificar na observações.",
+    "price": 28.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 56.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 45.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 28.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE BOLONHESA",
+    "description": "Molho de tomates frescos, carne moida refogada, tempero especial do chef.\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 28.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 56.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 45.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 28.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE BRÓCOLIS COM BACON",
+    "description": "Bacon em cubos selecionados e fritos,brócolis selecionados e refogado na manteiga e tempero especial do cheff.\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 28.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 56.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 45.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 28.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE CALABRESA",
+    "description": "Calabresa selecionada em pedaços refogadas com tempero especial do cheff\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 28.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 56.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 45.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 28.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE CAMARÃO",
+    "description": "Camarões selecionados e refogados na manteiga, molho especial do cheff\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 39.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 88.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 67.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 39.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE CARNE SECA",
+    "description": "Carne seca desfiada e tempero especial do chef\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 32.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 69.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 51.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 32.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE CORAÇÃO DE FRANGO",
+    "description": "Metades de coração refogados na manteiga, tempero especial do chef\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 28.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 56.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 45.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 28.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE FILÉ COM BACON",
+    "description": "Suculentos pedaços selados de filé, tempero especial do chef, cubos de bacon selecionados e fritos.\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar nas observações.",
+    "price": 32.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 69.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 51.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 32.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE FILÉ COM CHEDDAR",
+    "description": "Suculentos pedaços selados de filé, tempero especial do chef, cobertos de cheddar cremoso.\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 32.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 69.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 51.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 32.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE FILÉ COM GORGONZOLA",
+    "description": "Suculentos pedaços selados de filé, tempero especial do chef\ncreme de queijo gorgonzola.\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 35.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 75.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 59.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 35.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE FILÉ COM REQUEIJÃO",
+    "description": "Suculentos pedaços selados de filé, tempero especial do chef cobertos de requeijão cremoso\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 32.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 69.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 51.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 32.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE FRANGO",
+    "description": "Peito de frango desfiado, molho de tomates frescos, tempero especial do chef\ncoberto de requeijão cremoso\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 28.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 56.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 45.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 28.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE FRANGO COM PALMITO",
+    "description": "Peito de frango desfiado, molho de tomates frescos, tempero especial do cheff\npalmito de palmeira real em cubos cobertos por requeijão cremoso\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 32.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 69.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 51.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 32.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE FRANGO, CHEDDAR E BACON",
+    "description": "Peito de frango desfiado, molho de tomates frescos, tempero especial do chef\ncubos de bacon selecionados e fritos cobertos por cheddar cremoso\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 32.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 69.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 51.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 32.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE LINGUIÇA BLUMENAU",
+    "description": "Linguiça blumenau olho moída refogada no azeite e tempero especial do cheff\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 32.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 69.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 51.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 32.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE STROGONOFF DE CARNE",
+    "description": "Filés em tiras selecionados e selados, molho strogonoff do chef, champignons frescos em pedaços\n*acompanha batata palha\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 32.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 69.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 51.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 32.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Pastelzinho de carne de sol - 4 unidades",
+            "price": 16.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de carne de sol - 9 unidades",
+            "price": 29.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarao  - 4 unidades",
+            "price": 21.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de camarão - 9 unidades",
+            "price": 41.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho de frango - 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Pastelzinho frango - 9 unidades",
+            "price": 25.9,
+            "description": "9 unidades - acompanha maionese caseira"
+          },
+          {
+            "name": "Porção extra de arroz",
+            "price": 6,
+            "description": "500gr de arroz"
+          },
+          {
+            "name": "Maionese caseira extra",
+            "price": 3,
+            "description": "Porção extra maionese caseira"
+          },
+          {
+            "name": "Batata Frita Média (250 gramas)",
+            "price": 18.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branco tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - pequeno",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional mini",
+            "price": 9.9,
+            "description": "Porção mini - serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de choc. Preto tradicional p",
+            "price": 19.9,
+            "description": "Porção pequena - serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto- 2un",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (2 unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho de chocolate branco (4 unidades)",
+            "price": 12.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(2unidades)",
+            "price": 8.9,
+            "description": null
+          },
+          {
+            "name": "Pastelzinho choc. Preto com banana(4unidades)",
+            "price": 12.9,
+            "description": null
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca cola zero açucar 600ml",
+            "price": 7,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata zero açucar",
+            "price": 5,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta Guaraná 600ml", "price": 7, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 7, "description": null },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Fanta laranja 600ml", "price": 7, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null },
+          { "name": "Sprite lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE STROGONOFF DE FRANGO",
+    "description": "Peito de frango em tiras selecionados e refogados, molho strogonoff do chef, champignons frescos em pedaços\n*acompanha batata palha\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 28.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 56.9,
+            "description": "Serve de 3 a 4 pessoas."
+          },
+          {
+            "name": "Médio",
+            "price": 45.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 28.9,
+            "description": "Serve uma pessoa."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE BRÓCOLIS COM GORGONZOLA",
+    "description": "Brócolis selecionados e refogado na manteiga, tempero especial do cheff\ncobertos por molho gorgonzola cremoso\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 32.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 69.9,
+            "description": "Serve de 3 a 4 pessoas"
+          },
+          {
+            "name": "Médio",
+            "price": 51.9,
+            "description": "Serve de 2 a 3 pessoas"
+          },
+          { "name": "Pequeno", "price": 32.9, "description": "Serve 1 pessoa" }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branto trad. Mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - p",
+            "price": 19.9,
+            "description": "Serve 1 a 2 pessoas"
+          },
+          {
+            "name": "Escondidinho de chocolate preto trad. Mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate preto tradicional - p",
+            "price": 19.9,
+            "description": "Serve 1 a 2 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": "4 unidades"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": "2 unidades"
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 2un",
+            "price": 8.9,
+            "description": "2 unidades"
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": "4 unidades"
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata sem açucar",
+            "price": 5,
+            "description": null
+          },
+          { "name": "Sprite lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Sprite 2 litros", "price": 10, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Batata Frita (150 gramas)",
+            "price": 11.9,
+            "description": null
+          },
+          {
+            "name": "Polenta Frita (150 gramas)",
+            "price": 10.9,
+            "description": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE BRÓCOLIS COM MILHO",
+    "description": "Brocolis selecionados, milho verde fresco refogados na manteica com tempero\nespecial do cheff\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 28.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 56.9,
+            "description": "Serve de 3 a 4 pessoas"
+          },
+          {
+            "name": "Médio",
+            "price": 45.9,
+            "description": "Serve de 2 a 3 pessoas"
+          },
+          { "name": "Pequeno", "price": 28.9, "description": "Serve 1 pessoa" }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branto trad. Mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - p",
+            "price": 19.9,
+            "description": "Serve 1 a 2 pessoas"
+          },
+          {
+            "name": "Escondidinho de chocolate preto trad. Mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate preto tradicional - p",
+            "price": 19.9,
+            "description": "Serve 1 a 2 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": "4 unidades"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": "2 unidades"
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 2un",
+            "price": 8.9,
+            "description": "2 unidades"
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": "4 unidades"
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata sem açucar",
+            "price": 5,
+            "description": null
+          },
+          { "name": "Sprite lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Sprite 2 litros", "price": 10, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Batata Frita (150 gramas)",
+            "price": 11.9,
+            "description": null
+          },
+          {
+            "name": "Polenta Frita (150 gramas)",
+            "price": 10.9,
+            "description": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE PALMITO COM REQUEIJÃO",
+    "description": "Palmitos palmeira real refogado, tempero do cheff cobertos\npor requeijão cremoso\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 32.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 69.9,
+            "description": "Serve de 3 a 4 pessoas"
+          },
+          {
+            "name": "Médio",
+            "price": 51.9,
+            "description": "Serve de 2 a 3 pessoas"
+          },
+          { "name": "Pequeno", "price": 32.9, "description": "Serve 1 pessoa" }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branto trad. Mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - p",
+            "price": 19.9,
+            "description": "Serve 1 a 2 pessoas"
+          },
+          {
+            "name": "Escondidinho de chocolate preto trad. Mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate preto tradicional - p",
+            "price": 19.9,
+            "description": "Serve 1 a 2 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": "4 unidades"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": "2 unidades"
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 2un",
+            "price": 8.9,
+            "description": "2 unidades"
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": "4 unidades"
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata sem açucar",
+            "price": 5,
+            "description": null
+          },
+          { "name": "Sprite lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Sprite 2 litros", "price": 10, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Batata Frita (150 gramas)",
+            "price": 11.9,
+            "description": null
+          },
+          {
+            "name": "Polenta Frita (150 gramas)",
+            "price": 10.9,
+            "description": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE SELETA DE LEGUMES",
+    "description": "Legumes selecionados refogados na manteiga, tempero especial do chef\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de mandioca e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 28.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Grande",
+            "price": 56.9,
+            "description": "Serve de 3 a 4 pessoas"
+          },
+          {
+            "name": "Médio",
+            "price": 45.9,
+            "description": "Serve de 2 a 3 pessoas"
+          },
+          { "name": "Pequeno", "price": 28.9, "description": "Serve 1 pessoa" }
+        ]
+      },
+      {
+        "name": "Sobremesas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          {
+            "name": "Escondidinho de chocolate branto trad. Mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate branco tradicional - p",
+            "price": 19.9,
+            "description": "Serve 1 a 2 pessoas"
+          },
+          {
+            "name": "Escondidinho de chocolate preto trad. Mini",
+            "price": 9.9,
+            "description": "Serve 1 pessoa"
+          },
+          {
+            "name": "Escondidinho de chocolate preto tradicional - p",
+            "price": 19.9,
+            "description": "Serve 1 a 2 pessoas"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 4un",
+            "price": 12.9,
+            "description": "4 unidades"
+          },
+          {
+            "name": "Pastelzinho de chocolate branco com banana - 2un",
+            "price": 8.9,
+            "description": "2 unidades"
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 2un",
+            "price": 8.9,
+            "description": "2 unidades"
+          },
+          {
+            "name": "Pastelzinho de chocolate preto - 4un",
+            "price": 12.9,
+            "description": "4 unidades"
+          }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Coca cola 2 litros", "price": 11, "description": null },
+          { "name": "Coca cola 600ml", "price": 7, "description": null },
+          { "name": "Coca cola lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola lata sem açucar",
+            "price": 5,
+            "description": null
+          },
+          { "name": "Sprite lata", "price": 5, "description": null },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Sprite 2 litros", "price": 10, "description": null },
+          { "name": "Sprite 600ml", "price": 7, "description": null }
+        ]
+      },
+      {
+        "name": "Entradas",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Batata Frita (150 gramas)",
+            "price": 11.9,
+            "description": null
+          },
+          {
+            "name": "Polenta Frita (150 gramas)",
+            "price": 10.9,
+            "description": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO BOLONHESA FIT",
+    "description": "Molho de tomates frescos, carne moida refogada, tempero especial do chef\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de batata doce e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 28.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Pequeno",
+            "price": 28.9,
+            "description": "Serve 1 pessoas"
+          },
+          {
+            "name": "Médio",
+            "price": 45.9,
+            "description": "Serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Grande",
+            "price": 56.9,
+            "description": "Serve de 3 a 4 pessoas"
+          }
+        ]
+      },
+      {
+        "name": "Adicione ao seu pedido",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Salada (pepino, cenoura e repolho)",
+            "price": 4,
+            "description": null
+          },
+          { "name": "Molho de pimenta extra", "price": 3, "description": null },
+          { "name": "Maionese caseira", "price": 3, "description": null }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Sprite lata", "price": 5, "description": "350ml" },
+          { "name": "Sprite 2 litros", "price": 10, "description": null },
+          { "name": "Coca cola zero lata", "price": 5, "description": "350ml" },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 10,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": "350ml" },
+          { "name": "Coca cola 2 litros", "price": 10, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO CARNE SECA (FIT)",
+    "description": "Carne seca desfiada e tempero especial do chefmolho especial do cheff\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de batata doce e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 32.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Pequeno",
+            "price": 32.9,
+            "description": "Serve 1 pessoas"
+          },
+          {
+            "name": "Médio",
+            "price": 51.9,
+            "description": "Serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Grande",
+            "price": 69.9,
+            "description": "Serve de 3 a 4 pessoas"
+          }
+        ]
+      },
+      {
+        "name": "Adicione ao seu pedido",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Salada (pepino, cenoura e repolho)",
+            "price": 4,
+            "description": null
+          },
+          { "name": "Molho de pimenta extra", "price": 3, "description": null },
+          { "name": "Maionese caseira", "price": 3, "description": null }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Sprite lata", "price": 5, "description": "350ml" },
+          { "name": "Sprite 2 litros", "price": 10, "description": null },
+          { "name": "Coca cola zero lata", "price": 5, "description": "350ml" },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 10,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": "350ml" },
+          { "name": "Coca cola 2 litros", "price": 10, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO FILÉ FIT",
+    "description": "Filé grelhado, tempero especial do chef.\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de batata doce e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 32.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Pequeno",
+            "price": 32.9,
+            "description": "Serve 1 pessoas"
+          },
+          {
+            "name": "Médio",
+            "price": 51.9,
+            "description": "Serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Grande",
+            "price": 69.9,
+            "description": "Serve de 3 a 4 pessoas"
+          }
+        ]
+      },
+      {
+        "name": "Adicione ao seu pedido",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Salada (pepino, cenoura e repolho)",
+            "price": 4,
+            "description": null
+          },
+          { "name": "Molho de pimenta extra", "price": 3, "description": null },
+          { "name": "Maionese caseira", "price": 3, "description": null }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Sprite lata", "price": 5, "description": "350ml" },
+          { "name": "Sprite 2 litros", "price": 10, "description": null },
+          { "name": "Coca cola zero lata", "price": 5, "description": "350ml" },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 10,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": "350ml" },
+          { "name": "Coca cola 2 litros", "price": 10, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE CAMARÃO (FIT)",
+    "description": "Camarões selecionados e refogados na manteiga, molho especial do cheff\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de batata doce e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 39.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Pequeno",
+            "price": 39.9,
+            "description": "Serve 1 pessoas"
+          },
+          {
+            "name": "Médio",
+            "price": 67.9,
+            "description": "Serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Grande",
+            "price": 88.9,
+            "description": "Serve de 3 a 4 pessoas"
+          }
+        ]
+      },
+      {
+        "name": "Adicione ao seu pedido",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Salada (pepino, cenoura e repolho)",
+            "price": 4,
+            "description": null
+          },
+          { "name": "Molho de pimenta extra", "price": 3, "description": null },
+          { "name": "Maionese caseira", "price": 3, "description": null }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Sprite lata", "price": 5, "description": "350ml" },
+          { "name": "Sprite 2 litros", "price": 10, "description": null },
+          { "name": "Coca cola zero lata", "price": 5, "description": "350ml" },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 10,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": "350ml" },
+          { "name": "Coca cola 2 litros", "price": 10, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO FIT DE FRANGO",
+    "description": "Peito de frango desfiado, molho de tomates frescos, tempero especial do chef\n**acompanha porção de arroz e molho de pimenta\ntodos os escondidinhos são montados com recheio escolhido, purê cremoso de batata doce e finalizado com cremosa camada de queijo mussarela gratinado.\n*todos os pratos contém cebola e cheiro verde.\n**para retirar algum item favor especificar na observações.",
+    "price": 28.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Pequeno",
+            "price": 28.9,
+            "description": "Serve 1 pessoas"
+          },
+          {
+            "name": "Médio",
+            "price": 45.9,
+            "description": "Serve de 2 a 3 pessoas"
+          },
+          {
+            "name": "Grande",
+            "price": 56.9,
+            "description": "Serve de 3 a 4 pessoas"
+          }
+        ]
+      },
+      {
+        "name": "Adicione ao seu pedido",
+        "min": 0,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Salada (repolho, cenoura e pepino.)",
+            "price": 4,
+            "description": null
+          },
+          {
+            "name": "Talheres descartáveis",
+            "price": 1.5,
+            "description": null
+          },
+          { "name": "Molho de pimenta extra", "price": 2, "description": null },
+          { "name": "Maionese caseira extra", "price": 2, "description": null }
+        ]
+      },
+      {
+        "name": "Bebidas",
+        "min": 0,
+        "max": 10,
+        "complements": [
+          { "name": "Sprite lata", "price": 5, "description": "350ml" },
+          { "name": "Sprite 2 litros", "price": 10, "description": null },
+          { "name": "Coca cola zero lata", "price": 5, "description": "350ml" },
+          {
+            "name": "Coca cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Coca cola lata", "price": 5, "description": "350ml" },
+          { "name": "Coca cola 2 litros", "price": 11, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE CHOCOLATE PRETO TRADICIONAL",
+    "description": "Purê cremoso de mandioca, coberto de deliciosa camada de chocolate derretido e gratinado.",
+    "price": 9.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          { "name": "Mini", "price": 9.9, "description": "Serve 1 pessoa" },
+          {
+            "name": "Pequeno",
+            "price": 19.9,
+            "description": "Serve 2 pessoas"
+          },
+          {
+            "name": "Médio",
+            "price": 34.9,
+            "description": "Serve de 2 a 3 pessoas."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE CHOCOLATE PRETO COM AMENDOIM",
+    "description": "Purê cremoso de mandioca, coberto de deliciosa camada de chocolate derretido, amendoim crocante e gratinado.",
+    "price": 10.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Médio",
+            "price": 36.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 21.9,
+            "description": "Serve 2 pessoas"
+          },
+          { "name": "Mini", "price": 10.9, "description": "Serve 1 pessoa" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE CHOCOLATE PRETO COM BANANA",
+    "description": "Purê cremoso de mandioca, coberto de banana e deliciosa camada de chocolate preto derretido e gratinado.",
+    "price": 10.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Médio",
+            "price": 36.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 21.9,
+            "description": "Serve 2 pessoas"
+          },
+          { "name": "Mini", "price": 10.9, "description": "Serve 1 pessoa" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE CHOCOLATE BRANCO TRADICIONAL",
+    "description": "Purê cremoso de mandioca, coberto de deliciosa camada de chocolate derretido e gratinado.",
+    "price": 9.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Médio",
+            "price": 34.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 19.9,
+            "description": "Serve 2 pessoas"
+          },
+          { "name": "Mini", "price": 9.9, "description": "Serve 1 pessoa" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE CHOCOLATE BRANCO COM BANANA",
+    "description": "Purê cremoso de mandioca, coberto de deliciosa camada de chocolate derretido e banana, gratinado.",
+    "price": 10.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Médio",
+            "price": 36.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 21.9,
+            "description": "Serve 2 pessoas"
+          },
+          { "name": "Mini", "price": 10.9, "description": "Serve 1 pessoa" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "ESCONDIDINHO DE CHOCOLATE BRANCO COM FLOCOS DE ARROZ",
+    "description": "Purê cremoso de mandioca, coberto de deliciosa camada de chocolate derretido e flocos de arroz gratinado.",
+    "price": 10.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o tamanho:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Médio",
+            "price": 36.9,
+            "description": "Serve de 2 a 3 pessoas."
+          },
+          {
+            "name": "Pequeno",
+            "price": 21.9,
+            "description": "Serve 2 pessoas"
+          },
+          { "name": "Mini", "price": 10.9, "description": "Serve 1 pessoa" }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PASTELZINHO DE CHOCOLATE BRANCO COM BANANA",
+    "description": "Pastel médio frito recheado com chocolate branco, banana e queijo.",
+    "price": 8.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Quantidade",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Pastel choco branco com banana 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades"
+          },
+          {
+            "name": "Pastel choco branco com banana 2 unidades",
+            "price": 8.9,
+            "description": "2 unidades"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PASTELZINHO DE CHOCOLATE PRETO COM BANANA",
+    "description": "Pastel médio frito recheado com chocolate preto, banana e queijo.",
+    "price": 8.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Quantidade",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Pastel choco preto com banana 4 unidades",
+            "price": 12.9,
+            "description": "4 unidades"
+          },
+          {
+            "name": "Pastel choco preto com banana 2 unidades",
+            "price": 8.9,
+            "description": "2 unidades"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PASTELZINHO DE CHOCOLATE PRETO TRADICIONAL",
+    "description": "Pastel frito recheado com chocolate preto e queijo.",
+    "price": 8.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Quantidade",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Pastel chocolate preto tradicional - 4un",
+            "price": 12.9,
+            "description": "4 unidades"
+          },
+          {
+            "name": "Pastel chocolate preto tradicional - 2 un",
+            "price": 8.9,
+            "description": "2 unidades"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "PASTELZINHO DE CHOCOLATE BRANCO TRADICIONAL",
+    "description": "Pastel frito recheado com chocolate branco e queijo.",
+    "price": 8.9,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Quantidade",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          {
+            "name": "Pastel chocolate branco tradicional - 4un",
+            "price": 12.9,
+            "description": "4 unidades"
+          },
+          {
+            "name": "Pastel chocolate branco tradicional - 2un",
+            "price": 8.9,
+            "description": "2 unidades"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "REFRIGERANTE 600ML",
+    "description": null,
+    "price": 7.5,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o sabor:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          { "name": "Sprite 600ml", "price": 7.5, "description": null },
+          { "name": "Coca cola 600ml", "price": 7.5, "description": null },
+          { "name": "Coca zero 600ml", "price": 7.5, "description": null },
+          { "name": "Fanta 600 ml", "price": 7.5, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "REFRIGERANTE 2 LITROS",
+    "description": null,
+    "price": 11,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o sabor:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          { "name": "Sprite 2 litros", "price": 11, "description": null },
+          {
+            "name": "Fanta Guaraná 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Fanta laranja 2 litros",
+            "price": 11,
+            "description": null
+          },
+          {
+            "name": "Coca-Cola zero 2 litros",
+            "price": 11,
+            "description": null
+          },
+          { "name": "Coca-Cola 2 litros", "price": 11, "description": null }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "REFRIGERANTE LATA 350ML",
+    "description": null,
+    "price": 5,
+    "discountPrince": null,
+    "complementGroups": [
+      {
+        "name": "Escolha o sabor:",
+        "min": 1,
+        "max": 1,
+        "complements": [
+          { "name": "Sprite lata", "price": 5.5, "description": null },
+          { "name": "Fanta Guaraná lata", "price": 5, "description": null },
+          { "name": "Fanta laranja lata", "price": 5, "description": null },
+          { "name": "Coca-Cola zero lata", "price": 5, "description": null },
+          { "name": "Coca-Cola lata", "price": 5, "description": null }
+        ]
+      }
+    ]
+  }
+]

@@ -4,7 +4,7 @@ using deep.wefood.api.Domain.Entities;
 
 namespace deep.wefood.api.Presentation.Dto
 {
-    public class IngredientDto
+    public class ComplementDto
     {
         public string Name { get; set; }
         public string Guid { get; set; }
@@ -12,11 +12,11 @@ namespace deep.wefood.api.Presentation.Dto
         public string GuidCompany { get; set; }
     }
 
-    public class IngredientProfile : Profile
+    public class ComplementProfile : Profile
     {
-        public IngredientProfile()
+        public ComplementProfile()
         {
-            CreateMap<Ingredient, IngredientDto>().ReverseMap();
+            CreateMap<Complement, ComplementDto>().ReverseMap();
         }
     }
 }

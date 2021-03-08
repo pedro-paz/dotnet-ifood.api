@@ -2,6 +2,7 @@ using System;
 using System.Linq;
 using AutoMapper;
 using deep.wefood.api.Domain.Interfaces.Generics;
+using deep.wefood.api.Domain.Services;
 using deep.wefood.api.Infrastructure.Repositories;
 using deep.wefood.api.Interfaces.Services;
 using deep.wefood.api.Services;
@@ -29,7 +30,7 @@ namespace deep.wefood.api.Presentation
             services.AddScoped(typeof(IRepository<>), typeof(PostgresRepository<>));
             services.AddScoped(typeof(IServiceProduct), typeof(ServiceProduct));
             services.AddScoped(typeof(IServiceOrder), typeof(ServiceOrder));
-            services.AddScoped(typeof(IServiceIngredient), typeof(ServiceIngredient));
+            services.AddScoped(typeof(IServiceComplement), typeof(ServiceComplement));
             services.AddScoped(typeof(IServiceCompany), typeof(ServiceCompany));
             services.AddScoped(typeof(IServiceUser), typeof(ServiceUser));
             services.AddControllers();

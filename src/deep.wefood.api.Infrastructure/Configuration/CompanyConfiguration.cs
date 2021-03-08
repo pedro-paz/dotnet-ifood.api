@@ -15,7 +15,7 @@ namespace deep.wefood.api.Infrastructure.Configuration
 
             //Foreign Keys
             builder.HasMany(x => x.Products)
-                .WithOne(x => x.Company)
+                .WithOne()
                 .HasForeignKey(x => x.IdCompany);
 
             //Columns
