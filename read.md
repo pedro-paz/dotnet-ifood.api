@@ -7,13 +7,13 @@ dotnet tool install --global dotnet-ef
 # Add Migrations
 
 ```
-dotnet-ef migrations add initial
+dotnet-ef migrations add <migration-name>
 ```
 
-# Update Database
+# Apply Migration
 
 ```
-
+dotnet ef database update
 ```
 
 # Colect Products
