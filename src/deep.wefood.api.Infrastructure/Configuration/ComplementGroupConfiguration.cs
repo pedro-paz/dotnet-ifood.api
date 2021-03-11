@@ -33,14 +33,12 @@ namespace deep.wefood.api.Infrastructure.Configuration
             builder.Property(x => x.Minimum)
                 .HasColumnName("compl_grp_min")
                 .IsRequired()
-                .HasDefaultValue(0)
-                .HasDefaultValueSql("uuid_generate_v4()");
+                .HasDefaultValue(0);
 
             builder.Property(x => x.Maximum)
                 .HasColumnName("compl_grp_max")
                 .IsRequired()
-                .HasDefaultValue(10)
-                .HasDefaultValueSql("uuid_generate_v4()");
+                .HasDefaultValue(10);
 
             builder.Property(x => x.RegisterDate)
                .HasColumnName("compl_grp_dt_register")
