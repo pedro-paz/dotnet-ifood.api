@@ -41,6 +41,9 @@ namespace deep.wefood.api.Infrastructure.Configuration
                 .IsRequired()
                 .HasDefaultValueSql("uuid_generate_v4()");
 
+            builder.Property(x => x.DiscountPrice)
+                .HasColumnName("prod_discount");
+
             builder.Property(x => x.Description)
                 .HasColumnName("prod_desc");
 

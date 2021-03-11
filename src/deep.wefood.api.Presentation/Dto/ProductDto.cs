@@ -9,10 +9,9 @@ namespace deep.wefood.api.Presentation.Dto
         public string Guid { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
-
         public string Description { get; set; }
-        public string GuidCompany { get; set; }
-        public virtual ICollection<ComplementDto> Ingredients { get; set; }
+        public decimal? DiscountPrice { get; set; }
+        public virtual ICollection<ComplementGroupDto> ComplementGroups { get; set; }
     }
 
     public class ProductProfile : Profile

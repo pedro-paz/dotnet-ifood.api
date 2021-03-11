@@ -9,7 +9,7 @@ namespace deep.wefood.api.Presentation.Dto
         public string Name { get; set; }
         public string Guid { get; set; }
         public string Description { get; set; }
-        public string GuidCompany { get; set; }
+        public decimal? Price { get; set; }
     }
 
     public class ComplementProfile : Profile
