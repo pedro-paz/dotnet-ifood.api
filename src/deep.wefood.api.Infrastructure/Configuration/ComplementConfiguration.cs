@@ -23,6 +23,14 @@ namespace deep.wefood.api.Infrastructure.Configuration
                 .HasColumnName("compl_id")
                 .IsRequired();
 
+            builder.Property(x => x.IdComplementGroup)
+                .HasColumnName("compl_cgroup_id")
+                .IsRequired();
+
+            builder.Property(x => x.Price)
+                .HasColumnName("coml_price")
+                .IsRequired();
+
             builder.Property(x => x.Name)
                 .HasColumnName("compl_name")
                 .IsRequired();

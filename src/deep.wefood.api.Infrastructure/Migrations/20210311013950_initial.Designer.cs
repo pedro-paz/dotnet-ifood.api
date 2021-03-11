@@ -10,7 +10,7 @@ using deep.wefood.api.Infrastructure.Repositories;
 namespace deep.wefood.api.Infrastructure.Migrations
 {
     [DbContext(typeof(PostgresContext))]
-    [Migration("20210304025711_initial")]
+    [Migration("20210311013950_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -59,52 +59,92 @@ namespace deep.wefood.api.Infrastructure.Migrations
                     b.ToTable("companies");
                 });
 
-            modelBuilder.Entity("deep.wefood.api.Domain.Entities.Ingredient", b =>
+            modelBuilder.Entity("deep.wefood.api.Domain.Entities.Complement", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("integer")
-                        .HasColumnName("ing_id")
+                        .HasColumnName("compl_id")
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn);
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("text")
-                        .HasColumnName("ing_desc");
+                        .HasColumnName("compl_desc");
 
                     b.Property<string>("Guid")
                         .IsRequired()
                         .ValueGeneratedOnAdd()
                         .HasColumnType("text")
-                        .HasColumnName("ing_guid")
+                        .HasColumnName("compl_guid")
                         .HasDefaultValueSql("uuid_generate_v4()");
 
-                    b.Property<int>("IdCompany")
+                    b.Property<int>("IdComplementGroup")
                         .HasColumnType("integer")
-                        .HasColumnName("ing_cmp_id");
-
-                    b.Property<int>("IdProduct")
-                        .HasColumnType("integer")
-                        .HasColumnName("ing_prodid");
+                        .HasColumnName("compl_cgroup_id");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text")
-                        .HasColumnName("ing_name");
+                        .HasColumnName("compl_name");
+
+                    b.Property<decimal?>("Price")
+                        .HasColumnType("numeric");
 
                     b.Property<DateTime>("RegisterDate")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("timestamp without time zone")
-                        .HasColumnName("ing_dt_register")
+                        .HasColumnName("compl_dt_register")
                         .HasDefaultValueSql("now()");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdCompany");
+                    b.HasIndex("IdComplementGroup");
+
+                    b.ToTable("complement");
+                });
+
+            modelBuilder.Entity("deep.wefood.api.Domain.Entities.ComplementGroup", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer")
+                        .HasColumnName("cgroup_id")
+                        .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn);
+
+                    b.Property<string>("Guid")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("text")
+                        .HasColumnName("cgroup_guid")
+                        .HasDefaultValueSql("uuid_generate_v4()");
+
+                    b.Property<int>("IdProduct")
+                        .HasColumnType("integer")
+                        .HasColumnName("cgroup_prod_id");
+
+                    b.Property<short>("Maximum")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("smallint")
+                        .HasDefaultValue((short)10)
+                        .HasColumnName("cgroup_max");
+
+                    b.Property<short>("Minimum")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("smallint")
+                        .HasDefaultValue((short)0)
+                        .HasColumnName("cgroup_min");
+
+                    b.Property<DateTime>("RegisterDate")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp without time zone")
+                        .HasColumnName("cgroup_dt_register")
+                        .HasDefaultValueSql("now()");
+
+                    b.HasKey("Id");
 
                     b.HasIndex("IdProduct");
 
-                    b.ToTable("ingredients");
+                    b.ToTable("complements_group");
                 });
 
             modelBuilder.Entity("deep.wefood.api.Domain.Entities.Order", b =>
@@ -150,6 +190,10 @@ namespace deep.wefood.api.Infrastructure.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("text")
                         .HasColumnName("prod_desc");
+
+                    b.Property<decimal?>("DiscountPrice")
+                        .HasColumnType("numeric")
+                        .HasColumnName("prod_discount");
 
                     b.Property<string>("Guid")
                         .IsRequired()
@@ -259,23 +303,22 @@ namespace deep.wefood.api.Infrastructure.Migrations
                     b.ToTable("users");
                 });
 
-            modelBuilder.Entity("deep.wefood.api.Domain.Entities.Ingredient", b =>
+            modelBuilder.Entity("deep.wefood.api.Domain.Entities.Complement", b =>
                 {
-                    b.HasOne("deep.wefood.api.Domain.Entities.Company", "Company")
-                        .WithMany()
-                        .HasForeignKey("IdCompany")
+                    b.HasOne("deep.wefood.api.Domain.Entities.ComplementGroup", null)
+                        .WithMany("Complements")
+                        .HasForeignKey("IdComplementGroup")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
 
-                    b.HasOne("deep.wefood.api.Domain.Entities.Product", "Product")
-                        .WithMany("Ingredients")
+            modelBuilder.Entity("deep.wefood.api.Domain.Entities.ComplementGroup", b =>
+                {
+                    b.HasOne("deep.wefood.api.Domain.Entities.Product", null)
+                        .WithMany("ComplementGroups")
                         .HasForeignKey("IdProduct")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Company");
-
-                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("deep.wefood.api.Domain.Entities.Order", b =>
@@ -291,13 +334,11 @@ namespace deep.wefood.api.Infrastructure.Migrations
 
             modelBuilder.Entity("deep.wefood.api.Domain.Entities.Product", b =>
                 {
-                    b.HasOne("deep.wefood.api.Domain.Entities.Company", "Company")
+                    b.HasOne("deep.wefood.api.Domain.Entities.Company", null)
                         .WithMany("Products")
                         .HasForeignKey("IdCompany")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-
-                    b.Navigation("Company");
                 });
 
             modelBuilder.Entity("deep.wefood.api.Domain.Entities.ProductOrder", b =>
@@ -324,6 +365,11 @@ namespace deep.wefood.api.Infrastructure.Migrations
                     b.Navigation("Products");
                 });
 
+            modelBuilder.Entity("deep.wefood.api.Domain.Entities.ComplementGroup", b =>
+                {
+                    b.Navigation("Complements");
+                });
+
             modelBuilder.Entity("deep.wefood.api.Domain.Entities.Order", b =>
                 {
                     b.Navigation("ProductOrder");
@@ -331,7 +377,7 @@ namespace deep.wefood.api.Infrastructure.Migrations
 
             modelBuilder.Entity("deep.wefood.api.Domain.Entities.Product", b =>
                 {
-                    b.Navigation("Ingredients");
+                    b.Navigation("ComplementGroups");
                 });
 
             modelBuilder.Entity("deep.wefood.api.Domain.Entities.User", b =>

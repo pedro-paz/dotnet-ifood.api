@@ -59,8 +59,9 @@ namespace deep.wefood.api.Infrastructure.Migrations
                     prod_cmp_id = table.Column<int>(type: "integer", nullable: false),
                     prod_guid = table.Column<string>(type: "text", nullable: false, defaultValueSql: "uuid_generate_v4()"),
                     prod_name = table.Column<string>(type: "text", nullable: true),
-                    prod_desc = table.Column<string>(type: "text", nullable: true),
                     prod_price = table.Column<decimal>(type: "numeric", nullable: false),
+                    prod_desc = table.Column<string>(type: "text", nullable: true),
+                    prod_discount = table.Column<decimal>(type: "numeric", nullable: true),
                     prod_dt_register = table.Column<DateTime>(type: "timestamp without time zone", nullable: false, defaultValueSql: "now()")
                 },
                 constraints: table =>
@@ -99,32 +100,24 @@ namespace deep.wefood.api.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ingredients",
+                name: "complements_group",
                 schema: "public",
                 columns: table => new
                 {
-                    ing_id = table.Column<int>(type: "integer", nullable: false)
+                    cgroup_id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
-                    ing_cmp_id = table.Column<int>(type: "integer", nullable: false),
-                    ing_prodid = table.Column<int>(type: "integer", nullable: false),
-                    ing_name = table.Column<string>(type: "text", nullable: false),
-                    ing_guid = table.Column<string>(type: "text", nullable: false, defaultValueSql: "uuid_generate_v4()"),
-                    ing_desc = table.Column<string>(type: "text", nullable: false),
-                    ing_dt_register = table.Column<DateTime>(type: "timestamp without time zone", nullable: false, defaultValueSql: "now()")
+                    cgroup_prod_id = table.Column<int>(type: "integer", nullable: false),
+                    cgroup_guid = table.Column<string>(type: "text", nullable: false, defaultValueSql: "uuid_generate_v4()"),
+                    cgroup_min = table.Column<short>(type: "smallint", nullable: false, defaultValue: (short)0),
+                    cgroup_max = table.Column<short>(type: "smallint", nullable: false, defaultValue: (short)10),
+                    cgroup_dt_register = table.Column<DateTime>(type: "timestamp without time zone", nullable: false, defaultValueSql: "now()")
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ingredients", x => x.ing_id);
+                    table.PrimaryKey("PK_complements_group", x => x.cgroup_id);
                     table.ForeignKey(
-                        name: "FK_ingredients_companies_ing_cmp_id",
-                        column: x => x.ing_cmp_id,
-                        principalSchema: "public",
-                        principalTable: "companies",
-                        principalColumn: "cmp_id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_ingredients_products_ing_prodid",
-                        column: x => x.ing_prodid,
+                        name: "FK_complements_group_products_cgroup_prod_id",
+                        column: x => x.cgroup_prod_id,
                         principalSchema: "public",
                         principalTable: "products",
                         principalColumn: "prod_id",
@@ -162,17 +155,43 @@ namespace deep.wefood.api.Infrastructure.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
-            migrationBuilder.CreateIndex(
-                name: "IX_ingredients_ing_cmp_id",
+            migrationBuilder.CreateTable(
+                name: "complement",
                 schema: "public",
-                table: "ingredients",
-                column: "ing_cmp_id");
+                columns: table => new
+                {
+                    compl_id = table.Column<int>(type: "integer", nullable: false)
+                        .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn),
+                    compl_cgroup_id = table.Column<int>(type: "integer", nullable: false),
+                    compl_name = table.Column<string>(type: "text", nullable: false),
+                    compl_guid = table.Column<string>(type: "text", nullable: false, defaultValueSql: "uuid_generate_v4()"),
+                    compl_desc = table.Column<string>(type: "text", nullable: true),
+                    Price = table.Column<decimal>(type: "numeric", nullable: true),
+                    compl_dt_register = table.Column<DateTime>(type: "timestamp without time zone", nullable: false, defaultValueSql: "now()")
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_complement", x => x.compl_id);
+                    table.ForeignKey(
+                        name: "FK_complement_complements_group_compl_cgroup_id",
+                        column: x => x.compl_cgroup_id,
+                        principalSchema: "public",
+                        principalTable: "complements_group",
+                        principalColumn: "cgroup_id",
+                        onDelete: ReferentialAction.Cascade);
+                });
 
             migrationBuilder.CreateIndex(
-                name: "IX_ingredients_ing_prodid",
+                name: "IX_complement_compl_cgroup_id",
                 schema: "public",
-                table: "ingredients",
-                column: "ing_prodid");
+                table: "complement",
+                column: "compl_cgroup_id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_complements_group_cgroup_prod_id",
+                schema: "public",
+                table: "complements_group",
+                column: "cgroup_prod_id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_order_products_ordprod_ped_id",
@@ -202,11 +221,15 @@ namespace deep.wefood.api.Infrastructure.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "ingredients",
+                name: "complement",
                 schema: "public");
 
             migrationBuilder.DropTable(
                 name: "order_products",
+                schema: "public");
+
+            migrationBuilder.DropTable(
+                name: "complements_group",
                 schema: "public");
 
             migrationBuilder.DropTable(

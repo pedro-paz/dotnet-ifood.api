@@ -22,26 +22,30 @@ namespace deep.wefood.api.Infrastructure.Configuration
 
             //Columms
             builder.Property(x => x.Id)
-                .HasColumnName("compl_grp_id")
+                .HasColumnName("cgroup_id")
+                .IsRequired();
+
+            builder.Property(x => x.IdProduct)
+                .HasColumnName("cgroup_prod_id")
                 .IsRequired();
 
             builder.Property(x => x.Guid)
-                .HasColumnName("compl_grp_guid")
+                .HasColumnName("cgroup_guid")
                 .IsRequired()
                 .HasDefaultValueSql("uuid_generate_v4()");
 
             builder.Property(x => x.Minimum)
-                .HasColumnName("compl_grp_min")
+                .HasColumnName("cgroup_min")
                 .IsRequired()
                 .HasDefaultValue(0);
 
             builder.Property(x => x.Maximum)
-                .HasColumnName("compl_grp_max")
+                .HasColumnName("cgroup_max")
                 .IsRequired()
                 .HasDefaultValue(10);
 
             builder.Property(x => x.RegisterDate)
-               .HasColumnName("compl_grp_dt_register")
+               .HasColumnName("cgroup_dt_register")
                .IsRequired()
                .HasDefaultValueSql("now()");
 
