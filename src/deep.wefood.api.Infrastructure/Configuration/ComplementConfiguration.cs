@@ -28,8 +28,7 @@ namespace deep.wefood.api.Infrastructure.Configuration
                 .IsRequired();
 
             builder.Property(x => x.Price)
-                .HasColumnName("coml_price")
-                .IsRequired();
+                .HasColumnName("coml_price");
 
             builder.Property(x => x.Name)
                 .HasColumnName("compl_name")
