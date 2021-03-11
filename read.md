@@ -1,3 +1,21 @@
+# Install EF
+
+```
+dotnet tool install --global dotnet-ef
+```
+
+# Add Migrations
+
+```
+dotnet-ef migrations add initial
+```
+
+# Update Database
+
+```
+
+```
+
 # Colect Products
 
 ```
