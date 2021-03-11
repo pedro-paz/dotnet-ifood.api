@@ -6,5 +6,6 @@ namespace deep.wefood.api.Domain.Entities
     {
         public int Id { get; private set; }
         public DateTime RegisterDate { get; private set; }
+
     }
 }
