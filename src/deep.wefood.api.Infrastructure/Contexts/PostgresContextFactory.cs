@@ -1,7 +1,5 @@
-using System;
 using System.IO;
 using deep.wefood.api.Infrastructure.Repositories;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
 
@@ -11,10 +9,9 @@ namespace deep.wefood.api.Infrastructure.Contexts
     {
         public PostgresContext CreateDbContext(string[] args)
         {
-
             var configuration = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetParent(Directory.GetCurrentDirectory()).ToString())
-                .AddJsonFile("deep.wefood.api.Presentation/appsettings.json")
+                .AddJsonFile("deep.wefood.api.Presentation/appsettings.Development.json")
                 .Build();
 
             return new PostgresContext(configuration);
