@@ -8,6 +8,7 @@ using deep.wefood.api.Interfaces.Services;
 using deep.wefood.api.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -27,6 +28,7 @@ namespace deep.wefood.api.Presentation
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped(typeof(PostgresContext), typeof(PostgresContext));
             services.AddScoped(typeof(IRepository<>), typeof(PostgresRepository<>));
             services.AddScoped(typeof(IServiceProduct), typeof(ServiceProduct));
             services.AddScoped(typeof(IServiceOrder), typeof(ServiceOrder));
