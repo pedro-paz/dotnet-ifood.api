@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 using System.Linq;
 using AutoMapper;
 using deep.wefood.api.Domain.Interfaces.Generics;
@@ -18,16 +19,23 @@ namespace deep.wefood.api.Presentation
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+        public IConfigurationRoot Configuration { get; private set; }
 
-        public IConfiguration Configuration { get; }
+        public Startup(IWebHostEnvironment env)
+        {
+            var builder = new ConfigurationBuilder()
+                          .SetBasePath(env.ContentRootPath)
+                          .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
+                          .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+                          .AddEnvironmentVariables();
+
+            Configuration = builder.Build();
+        }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton(typeof(IConfiguration), Configuration);
             services.AddScoped(typeof(PostgresContext), typeof(PostgresContext));
             services.AddScoped(typeof(IRepository<>), typeof(PostgresRepository<>));
             services.AddScoped(typeof(IServiceProduct), typeof(ServiceProduct));
@@ -62,6 +70,8 @@ namespace deep.wefood.api.Presentation
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "deep.wefood.api.Presentation v1"));
             }
+
+
 
             app.UseHttpsRedirection();
 

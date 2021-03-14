@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using AutoMapper;
 using deep.wefood.api.Domain.Entities;
 using deep.wefood.api.Interfaces.Services;
@@ -18,6 +19,14 @@ namespace deep.wefood.api.Presentation.Controllers
         {
             _serviceCompany = serviceUser;
             _mapper = mapper;
+        }
+
+        [HttpGet]
+        public IActionResult Get()
+        {
+            var companies = _serviceCompany.FindAll();
+            var dtos = _mapper.Map<IEnumerable<CompanyDto>>(companies);
+            return companies != null ? Ok(JsonConvert.SerializeObject(dtos)) : NoContent();
         }
 
         [HttpGet("{guid}")]
