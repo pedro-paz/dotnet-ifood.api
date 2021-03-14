@@ -2,6 +2,7 @@
 using deep.wefood.api.Domain.Interfaces.Generics;
 using deep.wefood.api.Infrastructure.Contexts;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,51 +12,56 @@ namespace deep.wefood.api.Infrastructure.Repositories
     public class PostgresRepository<TEntity>
         : IDisposable, IRepository<TEntity> where TEntity : BaseEntity
     {
-        public PostgresContext Db = new PostgresContext();
+        public PostgresContext _context;
+
+        public PostgresRepository(PostgresContext context)
+        {
+            _context = context;
+        }
 
         public void Add(TEntity obj)
         {
-            Db.Set<TEntity>().Add(obj);
+            _context.Set<TEntity>().Add(obj);
         }
 
         public void Dispose()
         {
-            Db.Dispose();
+            _context.Dispose();
         }
 
         public IEnumerable<TEntity> FindAll()
         {
-            return Db.Set<TEntity>().ToList();
+            return _context.Set<TEntity>().ToList();
         }
 
         public TEntity GetSingle(int id)
         {
-            return Db.Set<TEntity>().Find(id);
+            return _context.Set<TEntity>().Find(id);
         }
 
         public IEnumerable<TEntity> Query(Func<TEntity, bool> predicate)
         {
-            return Db.Set<TEntity>().Where(predicate);
+            return _context.Set<TEntity>().Where(predicate);
         }
 
         public void Delete(TEntity obj)
         {
-            Db.Remove(obj);
+            _context.Remove(obj);
         }
 
         public void Update(TEntity obj)
         {
-            Db.Entry(obj).State = EntityState.Modified;
+            _context.Entry(obj).State = EntityState.Modified;
         }
 
         public void SaveChanges()
         {
-            Db.SaveChanges();
+            _context.SaveChanges();
         }
 
         public TEntity FindById(int id)
         {
-            var entity = Db.Set<TEntity>().Where(x => x.Id == id).FirstOrDefault();
+            var entity = _context.Set<TEntity>().Where(x => x.Id == id).FirstOrDefault();
             return entity;
         }
 
