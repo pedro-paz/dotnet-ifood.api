@@ -61,5 +61,10 @@ namespace deep.wefood.api.Services
         {
             _companyRepository.SaveChanges();
         }
+
+        public IEnumerable<Company> FindAll()
+        {
+            return _companyRepository.FindAll();
+        }
     }
 }
