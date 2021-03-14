@@ -29,6 +29,10 @@ namespace deep.wefood.api.Infrastructure.Configuration
                 .HasColumnName("cgroup_prod_id")
                 .IsRequired();
 
+            builder.Property(x => x.Name)
+                .HasColumnName("cgroup_name")
+                .IsRequired();
+
             builder.Property(x => x.Guid)
                 .HasColumnName("cgroup_guid")
                 .IsRequired()
