@@ -65,18 +65,17 @@ let observer = new MutationObserver((mutationList, observer) => {
     const removednodes = mutationList.map(x => [...x.removedNodes]).flat();
     const expectedElementAdded = addedNodes.filter(x => x.matches(expectedSelector)).length > 0
     const expectedElementRemoved = removednodes.filter(x => x.matches(expectedSelector)).length > 0
-    setTimeout(() => {
-        if (expectedElementAdded){
+    if (expectedElementAdded){
+        setTimeout(() => {
             allProducts.push(collectOpenedProduct())
             currentListProduct = getNextListProduct(currentListProduct);
             scrollToProduct(currentListProduct);
             document.querySelector(".dish__container .nav-header button").click()
-
-        }
-        else if(expectedElementRemoved){
-            currentListProduct?.click();
-        }
-    },2000)
+        },2000)
+    }
+    else if(expectedElementRemoved){
+        currentListProduct?.click();
+    }
 })
 
 observer.observe(document.querySelector('body'),{childList: true});
