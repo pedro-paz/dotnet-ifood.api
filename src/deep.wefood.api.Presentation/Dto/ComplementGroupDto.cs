@@ -10,7 +10,7 @@ namespace deep.wefood.api.Presentation.Dto
         public string Name { get; set; }
         public short Minimum { get; set; }
         public short Maximum { get; set; }
-        public virtual IEnumerable<ComplementDto> Complements { get; set; }
+        public ICollection<ComplementDto> Complements { get; set; }
     }
 
 
@@ -18,7 +18,8 @@ namespace deep.wefood.api.Presentation.Dto
     {
         public ComplementGroupProfile()
         {
-            CreateMap<ComplementGroup, ComplementGroupProfile>().ReverseMap();
+            CreateMap<ComplementGroup, ComplementGroupDto>()
+                .ReverseMap();
         }
     }
 }

@@ -7,6 +7,7 @@ namespace deep.wefood.api.Presentation.Dto
     public class ProductDto
     {
         public string Guid { get; set; }
+        public string GuidCompany { get; set; }
         public string Name { get; set; }
         public decimal Price { get; set; }
         public string Description { get; set; }
@@ -18,7 +19,9 @@ namespace deep.wefood.api.Presentation.Dto
     {
         public ProductProfile()
         {
-            CreateMap<Product, ProductDto>().ReverseMap();
+            CreateMap<Product, ProductDto>()
+                .ForMember(x => x.GuidCompany, opt => opt.MapFrom(x => x.Guid))
+                .ReverseMap();
         }
     }
 }

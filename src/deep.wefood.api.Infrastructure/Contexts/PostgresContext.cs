@@ -16,7 +16,6 @@ namespace deep.wefood.api.Infrastructure.Repositories
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseLazyLoadingProxies();
             optionsBuilder.UseNpgsql(
                 _configuration.GetConnectionString("Postgres"),
                 options => options.SetPostgresVersion(new Version(8, 1))

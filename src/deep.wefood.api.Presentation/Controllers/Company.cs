@@ -38,7 +38,7 @@ namespace deep.wefood.api.Presentation.Controllers
         }
 
         [HttpPost]
-        public IActionResult Post([FromForm] CompanyDto value)
+        public IActionResult Post([FromBody] CompanyDto value)
         {
             var entity = _mapper.Map<Company>(value);
             _serviceCompany.Add(entity);

@@ -17,10 +17,12 @@ namespace deep.wefood.api.Services
             _companyRepository = companyRepository;
         }
 
-        public void Add(Product product)
+        public void Add(Company company, Product product)
         {
-            _productRepository.Add(product);
-            _productRepository.SaveChanges();
+            company.Products = company.Products ?? new List<Product>();
+            company.Products.Add(product);
+            _companyRepository.Update(company);
+            _companyRepository.SaveChanges();
         }
 
         public void Delete(string guidProduct)
@@ -29,6 +31,7 @@ namespace deep.wefood.api.Services
 
             if (product == null)
                 throw new System.Exception("Product not found");
+
 
             _productRepository.Delete(product);
             _productRepository.SaveChanges();

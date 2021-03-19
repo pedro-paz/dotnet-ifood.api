@@ -10,7 +10,7 @@ namespace deep.wefood.api.Interfaces.Services
         Product FindByGuid(string guid);
         void Delete(string guidProduct);
         void Update(Product product);
-        void Add(Product product);
+        void Add(Company company, Product product);
         IEnumerable<Product> FindByCompany(string companyGuid);
     }
 }

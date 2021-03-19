@@ -13,11 +13,13 @@ namespace deep.wefood.api.Presentation.Controllers
     public class ProductController : ControllerBase
     {
         private IServiceProduct _serviceProduct;
+        private IServiceCompany _serviceCompany;
         private IMapper _mapper;
 
-        public ProductController(IMapper mapper, IServiceProduct serviceProduct)
+        public ProductController(IMapper mapper, IServiceProduct serviceProduct, IServiceCompany serviceCompany)
         {
             _serviceProduct = serviceProduct;
+            _serviceCompany = serviceCompany;
             _mapper = mapper;
         }
 
@@ -30,7 +32,7 @@ namespace deep.wefood.api.Presentation.Controllers
             return dto != null ? Ok(JsonConvert.SerializeObject(dto)) : NoContent();
         }
 
-        [HttpGet, Route("~/company/{companyGuid}/products")]
+        [HttpGet, Route("~/company/{companyGuid}/product")]
         public IActionResult GetByCompany(string companyGuid)
         {
             var products = _serviceProduct.FindByCompany(companyGuid);
@@ -40,11 +42,12 @@ namespace deep.wefood.api.Presentation.Controllers
         #endregion
 
         #region POST
-        [HttpPost]
-        public IActionResult Post([FromBody] ProductDto value)
+        [HttpPost, Route("~/company/{companyGuid}/product")]
+        public IActionResult Post(string companyGuid, [FromBody] ProductDto value)
         {
+            var company = _serviceCompany.FindByGuid(companyGuid);
             var product = _mapper.Map<Product>(value);
-            _serviceProduct.Update(product);
+            _serviceProduct.Add(company, product);
             return Ok();
         }
         #endregion
@@ -54,7 +57,7 @@ namespace deep.wefood.api.Presentation.Controllers
         public IActionResult Put(ProductDto value)
         {
             var product = _mapper.Map<Product>(value);
-            _serviceProduct.Add(product);
+            _serviceProduct.Update(product);
             return Ok();
         }
         #endregion

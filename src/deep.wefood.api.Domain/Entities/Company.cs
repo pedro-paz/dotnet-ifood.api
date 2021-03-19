@@ -7,7 +7,7 @@ namespace deep.wefood.api.Domain.Entities
         public string Guid { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
-        public virtual IEnumerable<Product> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
 
     }
 

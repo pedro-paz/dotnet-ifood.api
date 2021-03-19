@@ -10,6 +10,7 @@ namespace deep.wefood.api.Domain.Entities
         public decimal Price { get; set; }
         public string Description { get; set; }
         public decimal? DiscountPrice { get; set; }
+        public virtual Company Company { get; set; }
         public virtual ICollection<ComplementGroup> ComplementGroups { get; set; }
     }
 }

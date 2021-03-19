@@ -13,7 +13,6 @@ namespace deep.wefood.api.Presentation
     [ApiController]
     public class UserController : ControllerBase
     {
-        private IServiceCompany _serviceCompany;
         private IServiceUser _serviceUser;
         private IMapper _mapper;
 
