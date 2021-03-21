@@ -37,6 +37,7 @@ namespace deep.wefood.api.Presentation
         {
             services.AddSingleton(typeof(IConfiguration), Configuration);
             services.AddScoped(typeof(PostgresContext), typeof(PostgresContext));
+            services.AddScoped(typeof(IProductRepository), typeof(ProductPostgresRepository));
             services.AddScoped(typeof(IRepository<>), typeof(PostgresRepository<>));
             services.AddScoped(typeof(IServiceProduct), typeof(ServiceProduct));
             services.AddScoped(typeof(IServiceOrder), typeof(ServiceOrder));
@@ -71,14 +72,9 @@ namespace deep.wefood.api.Presentation
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "deep.wefood.api.Presentation v1"));
             }
 
-
-
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
