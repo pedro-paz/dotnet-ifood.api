@@ -33,6 +33,7 @@ namespace deep.wefood.api.Presentation
         #endregion
 
         #region POST
+        [HttpPost]
         public IActionResult Post([FromBody] UserDto value)
         {
             var entity = _mapper.Map<User>(value);
