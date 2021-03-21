@@ -2,6 +2,8 @@
 using System;
 using System.Reflection;
 using Microsoft.Extensions.Configuration;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace deep.wefood.api.Infrastructure.Repositories
 {
@@ -16,10 +18,13 @@ namespace deep.wefood.api.Infrastructure.Repositories
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql(
-                _configuration.GetConnectionString("Postgres"),
-                options => options.SetPostgresVersion(new Version(8, 1))
-            );
+            optionsBuilder
+                .UseNpgsql(
+                    _configuration.GetConnectionString("Postgres"),
+                    options => options.SetPostgresVersion(new Version(8, 1))
+                )
+                .LogTo(Console.WriteLine);
+
             base.OnConfiguring(optionsBuilder);
         }
 
