@@ -52,13 +52,12 @@ namespace deep.wefood.api.Services
 
         public Product FindByGuid(string guid)
         {
-            var product = _productRepository.Query(x => x.Guid == guid).FirstOrDefault();
+            var product = _productRepository.FindProductDetail(guid);
 
             if (product == null)
                 throw new System.Exception("Product not found");
 
             return product;
-
         }
 
         public IEnumerable<Product> FindByName(string name)

@@ -16,7 +16,7 @@ namespace deep.wefood.api.Infrastructure.Repositories
         {
             var product = _context.Set<Product>().Where(x => x.Guid == guidProduct)
                 .Include(x => x.ComplementGroups)
-                .Include(x => x.ComplementGroups.Select(y => y.Complements))
+                .ThenInclude(x => x.Complements)
                 .FirstOrDefault();
 
             return product;

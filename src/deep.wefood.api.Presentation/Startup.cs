@@ -1,5 +1,4 @@
 using System;
-using System.Diagnostics;
 using System.Linq;
 using AutoMapper;
 using deep.wefood.api.Domain.Interfaces.Generics;
@@ -7,13 +6,13 @@ using deep.wefood.api.Domain.Services;
 using deep.wefood.api.Infrastructure.Repositories;
 using deep.wefood.api.Interfaces.Services;
 using deep.wefood.api.Services;
+using Microsoft.OpenApi.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.OpenApi.Models;
+
 
 namespace deep.wefood.api.Presentation
 {
@@ -44,12 +43,6 @@ namespace deep.wefood.api.Presentation
             services.AddScoped(typeof(IServiceComplement), typeof(ServiceComplement));
             services.AddScoped(typeof(IServiceCompany), typeof(ServiceCompany));
             services.AddScoped(typeof(IServiceUser), typeof(ServiceUser));
-            services.AddControllers();
-            services.AddRouting(options => options.LowercaseUrls = true);
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "deep.wefood.api.Presentation", Version = "v1" });
-            });
             services.AddSingleton(new MapperConfiguration(cfg =>
             {
                 cfg.AddProfiles(
@@ -60,6 +53,14 @@ namespace deep.wefood.api.Presentation
                         .Select(x => Activator.CreateInstance(x) as Profile).ToList()
                 );
             }).CreateMapper());
+
+            services.AddControllers();
+            services.AddRouting(options => options.LowercaseUrls = true);
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "deep.wefood.api.Presentation", Version = "v1" });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
