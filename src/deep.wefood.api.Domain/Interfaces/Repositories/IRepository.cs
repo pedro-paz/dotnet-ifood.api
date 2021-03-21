@@ -13,5 +13,7 @@ namespace deep.wefood.api.Domain.Interfaces.Generics
         void SaveChanges();
         IEnumerable<T> FindAll();
         IEnumerable<T> Query(Func<T, bool> predicate);
+
     }
+
 }
