@@ -8,13 +8,15 @@ namespace deep.wefood.api.Services
 {
     public class ServiceProduct : IServiceProduct
     {
-        private IRepository<Product> _productRepository;
+        private IProductRepository _productRepository;
         private IRepository<Company> _companyRepository;
+        private IRepository<ComplementGroup> _complementGroupsRepository;
 
-        public ServiceProduct(IRepository<Product> productRepository, IRepository<Company> companyRepository)
+        public ServiceProduct(IProductRepository productRepository, IRepository<Company> companyRepository, IRepository<ComplementGroup> complementGroupsRepository)
         {
             _productRepository = productRepository;
             _companyRepository = companyRepository;
+            _complementGroupsRepository = complementGroupsRepository;
         }
 
         public void Add(Company company, Product product)
@@ -32,7 +34,6 @@ namespace deep.wefood.api.Services
             if (product == null)
                 throw new System.Exception("Product not found");
 
-
             _productRepository.Delete(product);
             _productRepository.SaveChanges();
         }
@@ -44,17 +45,20 @@ namespace deep.wefood.api.Services
             if (company == null)
                 throw new System.Exception("Company not found");
 
-            return company.Products;
-        }
+            var products = _productRepository.Query(x => x.IdCompany == company.Id);
 
-        public IEnumerable<Product> FindByEmpresa(Company empresa)
-        {
-            return _productRepository.Query(x => x.IdCompany == empresa.Id);
+            return products;
         }
 
         public Product FindByGuid(string guid)
         {
-            return _productRepository.Query(x => x.Guid == guid).FirstOrDefault();
+            var product = _productRepository.Query(x => x.Guid == guid).FirstOrDefault();
+
+            if (product == null)
+                throw new System.Exception("Product not found");
+
+            return product;
+
         }
 
         public IEnumerable<Product> FindByName(string name)
