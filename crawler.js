@@ -1,3 +1,35 @@
+function observe(element) {
+  const self = this === window ? new observe(element) : this;
+
+  self.element = element || self.element;
+
+  this.assertExist = function (querySelector) {
+    return new Promise((resolve) => {
+      const observer = new MutationObserver(() => {
+        if (!!document.querySelector(querySelector)) {
+          setTimeout(() => resolve(self));
+          observer.disconnect();
+        }
+      });
+      observer.observe(element, { childList: true, subtree: true });
+    });
+  };
+
+  this.assertDoesntExist = function (querySelector) {
+    return new Promise((resolve) => {
+      const observer = new MutationObserver(() => {
+        if (!document.querySelector(querySelector)) {
+          setTimeout(() => resolve(self));
+          observer.disconnect();
+        }
+      });
+      observer.observe(element, { childList: true, subtree: true });
+    });
+  };
+
+  return self;
+}
+
 let collectProduct = () => {
   let modal = document?.querySelector(".dish__container");
   let productPrice =
@@ -59,45 +91,68 @@ let collectProduct = () => {
   };
 };
 
-let getNextListProduct = (product) => {
-  let list = [...document.querySelectorAll(".dish-card")];
-  const nextProducts = list.filter((x, i) => i > list.indexOf(product));
+let getNextElement = (current, selector) => {
+  let list = [...document.querySelectorAll(selector)];
+  const nextProducts = list.filter((x, i) => i > list.indexOf(current));
   return (nextProducts && nextProducts?.[0]) || null;
 };
 
-let scrollToProduct = (product) => {
-  product &&
-    window.scroll(0, product.getBoundingClientRect().top + window.scrollY);
+let scrollToElement = (element) => {
+  element &&
+    window.scroll(0, element.getBoundingClientRect().top + window.scrollY);
 };
 
-let allProducts = [];
-let currentListProduct = document.querySelector(".dish-card");
+function collectAllProducts(currentProduct) {
+  return new Promise((resolve) => {
+    currentProduct.click();
+    observe(document.body)
+      .assertExist(".ReactModalPortal")
+      .then((observer) => {
+        allCompanies[allCompanies.length - 1].products.push(collectProduct());
+        document.querySelector(".dish__container .nav-header button").click();
+        observer.assertDoesntExist(".ReactModalPortal").then(() => {
+          currentProduct = getNextElement(currentProduct, ".dish-card");
+          scrollToElement(currentProduct);
+          if (currentProduct) {
+            resolve(collectAllProducts(currentProduct));
+          } else {
+            resolve();
+          }
+        });
+      });
+  });
+}
 
-let observer = new MutationObserver((mutationList, observer) => {
-  const expectedSelector = ".ReactModalPortal";
-  const addedNodes = mutationList.map((x) => [...x.addedNodes]).flat();
-  const removednodes = mutationList.map((x) => [...x.removedNodes]).flat();
-  const expectedElementAdded =
-    addedNodes.filter((x) => x.matches(expectedSelector)).length > 0;
-  const expectedElementRemoved =
-    removednodes.filter((x) => x.matches(expectedSelector)).length > 0;
-  setTimeout(() => {
-    if (expectedElementAdded) {
-      allProducts.push(collectProduct());
-      currentListProduct = getNextListProduct(currentListProduct);
-      if (currentListProduct == null) {
-        observer.disconnect();
-        console.log("terminou!");
-      } else {
-        scrollToProduct(currentListProduct);
-      }
-      document?.querySelector(".dish__container .nav-header button").click();
-    } else if (expectedElementRemoved) {
-      currentListProduct?.click();
-    }
-  }, 2000);
-});
+function collectAllCompanies(currentCompany) {
+  currentCompany.click();
+  observe(document.body)
+    .assertExist(".dish-card")
+    .then((observer) => {
+      allCompanies.push({
+        products: [],
+      });
+      collectAllProducts(document.querySelector(".dish-card")).then(() => {
+        debugger;
+        window.history.back();
+        observer.assertExist(".restaurant-card__link").then(() => {
+          currentCompany = [
+            ...document.querySelectorAll(".restaurant-card__link"),
+          ].filter(
+            (x) =>
+              currentCompany.querySelector(".restaurant-name").innerText ==
+              x.querySelector(".restaurant-name").innerText
+          )[0];
+          currentCompany = getNextElement(
+            currentCompany,
+            ".restaurant-card__link"
+          );
+          if (currentCompany) {
+            collectAllCompanies(currentCompany);
+          }
+        });
+      });
+    });
+}
 
-observer.observe(document.querySelector("body"), { childList: true });
-scrollToProduct(currentListProduct);
-currentListProduct.click();
+let allCompanies = [];
+collectAllCompanies(document.querySelector(".restaurant-card__link"));
