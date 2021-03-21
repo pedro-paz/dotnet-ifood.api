@@ -1,4 +1,4 @@
-let collectOpenedProduct = () => {
+let collectProduct = () => {
   let modal = document?.querySelector(".dish__container");
   let productPrice =
     modal?.querySelector(".dish-price__original") ||
@@ -83,9 +83,14 @@ let observer = new MutationObserver((mutationList, observer) => {
     removednodes.filter((x) => x.matches(expectedSelector)).length > 0;
   setTimeout(() => {
     if (expectedElementAdded) {
-      allProducts.push(collectOpenedProduct());
+      allProducts.push(collectProduct());
       currentListProduct = getNextListProduct(currentListProduct);
-      scrollToProduct(currentListProduct);
+      if (currentListProduct == null) {
+        observer.disconnect();
+        console.log("terminou!");
+      } else {
+        scrollToProduct(currentListProduct);
+      }
       document?.querySelector(".dish__container .nav-header button").click();
     } else if (expectedElementRemoved) {
       currentListProduct?.click();
