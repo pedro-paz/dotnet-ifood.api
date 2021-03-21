@@ -108,17 +108,25 @@ function collectAllProducts(currentProduct) {
     observe(document.body)
       .assertExist(".ReactModalPortal")
       .then((observer) => {
-        allCompanies[allCompanies.length - 1].products.push(collectProduct());
-        document.querySelector(".dish__container .nav-header button").click();
-        observer.assertDoesntExist(".ReactModalPortal").then(() => {
-          currentProduct = getNextElement(currentProduct, ".dish-card");
-          scrollToElement(currentProduct);
-          if (currentProduct) {
-            resolve(collectAllProducts(currentProduct));
-          } else {
-            resolve();
-          }
-        });
+        observer
+          .assertExist(".ReactModalPortal .dish__container")
+          .then((observer) => {
+            allCompanies[allCompanies.length - 1].products.push(
+              collectProduct()
+            );
+            document
+              .querySelector(".dish__container .nav-header button")
+              .click();
+            observer.assertDoesntExist(".ReactModalPortal").then(() => {
+              currentProduct = getNextElement(currentProduct, ".dish-card");
+              scrollToElement(currentProduct);
+              if (currentProduct) {
+                resolve(collectAllProducts(currentProduct));
+              } else {
+                resolve();
+              }
+            });
+          });
       });
   });
 }
@@ -132,7 +140,6 @@ function collectAllCompanies(currentCompany) {
         products: [],
       });
       collectAllProducts(document.querySelector(".dish-card")).then(() => {
-        debugger;
         window.history.back();
         observer.assertExist(".restaurant-card__link").then(() => {
           currentCompany = [
