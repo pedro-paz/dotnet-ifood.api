@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using deep.wefood.api.Infrastructure.Repositories;
@@ -9,9 +10,10 @@ using deep.wefood.api.Infrastructure.Repositories;
 namespace deep.wefood.api.Infrastructure.Migrations
 {
     [DbContext(typeof(PostgresContext))]
-    partial class PostgresContextModelSnapshot : ModelSnapshot
+    [Migration("20210322002459_company properties")]
+    partial class companyproperties
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -30,9 +32,7 @@ namespace deep.wefood.api.Infrastructure.Migrations
                         .HasAnnotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.SerialColumn);
 
                     b.Property<string>("City")
-                        .IsRequired()
-                        .HasColumnType("text")
-                        .HasColumnName("cmp_city");
+                        .HasColumnType("text");
 
                     b.Property<string>("District")
                         .IsRequired()
@@ -68,11 +68,7 @@ namespace deep.wefood.api.Infrastructure.Migrations
                         .HasDefaultValueSql("now()");
 
                     b.Property<string>("State")
-                        .IsRequired()
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("text")
-                        .HasDefaultValue("")
-                        .HasColumnName("cmp_state");
+                        .HasColumnType("text");
 
                     b.Property<string>("Street")
                         .IsRequired()
@@ -80,8 +76,7 @@ namespace deep.wefood.api.Infrastructure.Migrations
                         .HasColumnName("cmp_street");
 
                     b.Property<short>("StreetNumber")
-                        .HasColumnType("smallint")
-                        .HasColumnName("cmp_street_number");
+                        .HasColumnType("smallint");
 
                     b.Property<string>("Zip")
                         .IsRequired()

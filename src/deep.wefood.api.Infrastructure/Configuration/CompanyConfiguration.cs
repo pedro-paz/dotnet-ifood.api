@@ -28,8 +28,37 @@ namespace deep.wefood.api.Infrastructure.Configuration
                 .IsRequired()
                 .HasDefaultValueSql("uuid_generate_v4()");
 
-            builder.Property(x => x.Address)
-                .HasColumnName("cmp_address")
+            builder.Property(x => x.Zip)
+                .HasColumnName("cmp_zip")
+                .IsRequired();
+
+            builder.Property(x => x.Street)
+                .HasColumnName("cmp_street")
+                .IsRequired();
+
+            builder.Property(x => x.City)
+                .HasColumnName("cmp_city")
+                .IsRequired();
+
+            builder.Property(x => x.State)
+                .HasColumnName("cmp_state")
+                .IsRequired();
+
+            builder.Property(x => x.StreetNumber)
+                .HasColumnName("cmp_street_number")
+                .IsRequired();
+
+            builder.Property(x => x.District)
+                .HasColumnName("cmp_district")
+                .IsRequired();
+
+            builder.Property(x => x.Rating)
+                .HasColumnName("cmp_rating")
+                .IsRequired()
+                .HasDefaultValue(0);
+
+            builder.Property(x => x.MinimumOrderValue)
+                .HasColumnName("cmp_min_order")
                 .IsRequired();
 
             builder.Property(x => x.Name)
