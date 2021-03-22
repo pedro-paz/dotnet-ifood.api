@@ -106,27 +106,19 @@ function collectAllProducts(currentProduct) {
   return new Promise((resolve) => {
     currentProduct.click();
     observe(document.body)
-      .assertExist(".ReactModalPortal")
+      .assertExist(".ReactModalPortal .dish__container")
       .then((observer) => {
-        observer
-          .assertExist(".ReactModalPortal .dish__container")
-          .then((observer) => {
-            allCompanies[allCompanies.length - 1].products.push(
-              collectProduct()
-            );
-            document
-              .querySelector(".dish__container .nav-header button")
-              .click();
-            observer.assertDoesntExist(".ReactModalPortal").then(() => {
-              currentProduct = getNextElement(currentProduct, ".dish-card");
-              scrollToElement(currentProduct);
-              if (currentProduct) {
-                resolve(collectAllProducts(currentProduct));
-              } else {
-                resolve();
-              }
-            });
-          });
+        allCompanies[allCompanies.length - 1].products.push(collectProduct());
+        document.querySelector(".dish__container .nav-header button").click();
+        observer.assertDoesntExist(".ReactModalPortal").then(() => {
+          currentProduct = getNextElement(currentProduct, ".dish-card");
+          scrollToElement(currentProduct);
+          if (currentProduct) {
+            resolve(collectAllProducts(currentProduct));
+          } else {
+            resolve();
+          }
+        });
       });
   });
 }
@@ -136,28 +128,78 @@ function collectAllCompanies(currentCompany) {
   observe(document.body)
     .assertExist(".dish-card")
     .then((observer) => {
-      allCompanies.push({
-        products: [],
-      });
-      collectAllProducts(document.querySelector(".dish-card")).then(() => {
-        window.history.back();
-        observer.assertExist(".restaurant-card__link").then(() => {
-          currentCompany = [
-            ...document.querySelectorAll(".restaurant-card__link"),
-          ].filter(
-            (x) =>
-              currentCompany.querySelector(".restaurant-name").innerText ==
-              x.querySelector(".restaurant-name").innerText
-          )[0];
-          currentCompany = getNextElement(
-            currentCompany,
-            ".restaurant-card__link"
-          );
-          if (currentCompany) {
-            collectAllCompanies(currentCompany);
-          }
+      document.querySelector(".merchant-details__button").click();
+      observer
+        .assertExist(".drawer__content-container .merchant-details-about")
+        .then((observer) => {
+          allCompanies.push({
+            name: document.querySelector(".merchant-info__title").innerText,
+            street: document
+              .querySelectorAll(
+                ".merchant-details-about .merchant-details-about__info-data"
+              )?.[0]
+              .innerText.split(",")?.[0],
+            streetNumber: document
+              .querySelectorAll(
+                ".merchant-details-about .merchant-details-about__info-data"
+              )?.[0]
+              .innerText.split(/[,-]/)?.[1],
+            district: document
+              .querySelectorAll(
+                ".merchant-details-about .merchant-details-about__info-data"
+              )?.[0]
+              .innerText.split(/[,-]/)[2]
+              .replace(/^ +| +$/g, ""),
+            zip: document
+              .querySelectorAll(
+                ".merchant-details-about .merchant-details-about__info-data"
+              )?.[2]
+              .innerText.split(" ")
+              .pop(),
+            state: document
+              .querySelectorAll(
+                ".merchant-details-about .merchant-details-about__info-data"
+              )?.[1]
+              .innerText.split("-")
+              .pop()
+              ?.replace(/^ +| +$/g, ""),
+            city: document
+              .querySelectorAll(
+                ".merchant-details-about .merchant-details-about__info-data"
+              )?.[1]
+              .innerText.split("-")[0]
+              .replace(/^ +| +$/g, ""),
+            rating: Number(
+              document.querySelector(".restaurant-rating").innerText
+            ),
+            minimumOrderValue: Number(
+              document
+                .querySelector(".merchant-info__minimum-order")
+                ?.innerText.match(/(\d|,)+/g)?.[0]
+                .replace(",", ".")
+            ),
+            products: [],
+          });
+          collectAllProducts(document.querySelector(".dish-card")).then(() => {
+            window.history.back();
+            observer.assertExist(".restaurant-card__link").then(() => {
+              currentCompany = [
+                ...document.querySelectorAll(".restaurant-card__link"),
+              ].filter(
+                (x) =>
+                  currentCompany.querySelector(".restaurant-name").innerText ==
+                  x.querySelector(".restaurant-name").innerText
+              )[0];
+              currentCompany = getNextElement(
+                currentCompany,
+                ".restaurant-card__link"
+              );
+              if (currentCompany) {
+                collectAllCompanies(currentCompany);
+              }
+            });
+          });
         });
-      });
     });
 }
 
