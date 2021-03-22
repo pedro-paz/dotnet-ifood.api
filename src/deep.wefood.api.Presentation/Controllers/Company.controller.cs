@@ -45,6 +45,15 @@ namespace deep.wefood.api.Presentation.Controllers
             return Ok();
         }
 
+        [HttpPost, Route("/companies")]
+        public IActionResult Post([FromBody] IEnumerable<CompanyDto> value)
+        {
+            var entity = _mapper.Map<IEnumerable<Company>>(value);
+            _serviceCompany.AddRange(entity);
+            return Ok();
+        }
+
+
         [HttpPut]
         public IActionResult Put([FromForm] CompanyDto value)
         {

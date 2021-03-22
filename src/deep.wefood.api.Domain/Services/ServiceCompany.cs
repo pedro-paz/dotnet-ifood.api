@@ -20,7 +20,13 @@ namespace deep.wefood.api.Services
         {
             _companyRepository.Add(company);
             _companyRepository.SaveChanges();
+        }
 
+
+        public void AddRange(IEnumerable<Company> companies)
+        {
+            companies.ToList().ForEach(company => _companyRepository.Add(company));
+            _companyRepository.SaveChanges();
         }
 
         public void Delete(string guid)
@@ -66,5 +72,6 @@ namespace deep.wefood.api.Services
         {
             return _companyRepository.FindAll();
         }
+
     }
 }
