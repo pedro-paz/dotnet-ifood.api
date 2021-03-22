@@ -113,7 +113,10 @@ function collectAllProducts(currentProduct) {
         observer.assertDoesntExist(".ReactModalPortal").then(() => {
           currentProduct = getNextElement(currentProduct, ".dish-card");
           scrollToElement(currentProduct);
-          if (currentProduct) {
+          if (
+            currentProduct &&
+            allCompanies[allCompanies.length - 1].products.lenght < 20
+          ) {
             resolve(collectAllProducts(currentProduct));
           } else {
             resolve();
@@ -134,11 +137,17 @@ function collectAllCompanies(currentCompany) {
         .then((observer) => {
           allCompanies.push({
             name: document.querySelector(".merchant-info__title").innerText,
-            street: document
-              .querySelectorAll(
-                ".merchant-details-about .merchant-details-about__info-data"
-              )?.[0]
-              .innerText.split(",")?.[0],
+            description: document.querySelector(
+              ".merchant-details-about__description"
+            )?.innerText,
+            street:
+              Number(
+                document
+                  .querySelectorAll(
+                    ".merchant-details-about .merchant-details-about__info-data"
+                  )?.[0]
+                  .innerText.split(",")?.[0]
+              ) || 0,
             streetNumber: document
               .querySelectorAll(
                 ".merchant-details-about .merchant-details-about__info-data"
