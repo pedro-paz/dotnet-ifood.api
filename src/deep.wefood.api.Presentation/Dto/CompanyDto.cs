@@ -8,7 +8,15 @@ namespace deep.wefood.api.Presentation.Dto
     {
         public string Guid { get; set; }
         public string Name { get; set; }
-        public string Address { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public string Street { get; set; }
+        public string Zip { get; set; }
+        public string District { get; set; }
+        public string Description { get; set; }
+        public float Rating { get; set; }
+        public float? MinimumOrderValue { get; set; }
+        public short StreetNumber { get; set; }
         public IEnumerable<ProductDto> Products { get; set; }
     }
 

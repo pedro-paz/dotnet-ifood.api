@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using deep.wefood.api.Infrastructure.Repositories;
@@ -9,9 +10,10 @@ using deep.wefood.api.Infrastructure.Repositories;
 namespace deep.wefood.api.Infrastructure.Migrations
 {
     [DbContext(typeof(PostgresContext))]
-    partial class PostgresContextModelSnapshot : ModelSnapshot
+    [Migration("20210322004935_added company description")]
+    partial class addedcompanydescription
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -50,7 +52,7 @@ namespace deep.wefood.api.Infrastructure.Migrations
                         .HasColumnName("cmp_guid")
                         .HasDefaultValueSql("uuid_generate_v4()");
 
-                    b.Property<float?>("MinimumOrderValue")
+                    b.Property<float>("MinimumOrderValue")
                         .HasColumnType("real")
                         .HasColumnName("cmp_min_order");
 

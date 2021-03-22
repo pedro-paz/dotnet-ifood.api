@@ -48,6 +48,9 @@ namespace deep.wefood.api.Infrastructure.Configuration
                 .HasColumnName("cmp_street_number")
                 .IsRequired();
 
+            builder.Property(x => x.Description)
+                .HasColumnName("cmp_description");
+
             builder.Property(x => x.District)
                 .HasColumnName("cmp_district")
                 .IsRequired();
@@ -58,8 +61,7 @@ namespace deep.wefood.api.Infrastructure.Configuration
                 .HasDefaultValue(0);
 
             builder.Property(x => x.MinimumOrderValue)
-                .HasColumnName("cmp_min_order")
-                .IsRequired();
+                .HasColumnName("cmp_min_order");
 
             builder.Property(x => x.Name)
                 .HasColumnName("cmp_name")
