@@ -24,8 +24,8 @@ namespace deep.wefood.api.Services
               x.Password.Trim().ToLower() == senha?.Trim().ToLower()
             ).FirstOrDefault();
 
-            if (user == null)
-                throw new System.Exception("User not found");
+            // if (user == null)
+            //     throw new System.Exception("User not found");
 
             return user;
         }
