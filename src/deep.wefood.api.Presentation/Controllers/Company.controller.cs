@@ -1,8 +1,11 @@
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
 using AutoMapper;
 using deep.wefood.api.Domain.Entities;
 using deep.wefood.api.Interfaces.Services;
 using deep.wefood.api.Presentation.Dto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 

@@ -37,6 +37,13 @@ namespace deep.wefood.api.Services
             ).FirstOrDefault();
         }
 
+        public User FindByEmail(string email)
+        {
+            return _userRepository.Query(x =>
+              x.Email.ToLower() == email?.ToLower()
+            ).FirstOrDefault();
+        }
+
         public void Update(User newUser)
         {
             var oldUser = _userRepository.Query(user => user.Guid == newUser.Guid).FirstOrDefault();
@@ -64,6 +71,10 @@ namespace deep.wefood.api.Services
 
         public void Add(User user)
         {
+            var isExistentEmail = FindByEmail(user.Email) != null;
+            if (isExistentEmail)
+                return;
+
             _userRepository.Add(user);
             _userRepository.SaveChanges();
         }

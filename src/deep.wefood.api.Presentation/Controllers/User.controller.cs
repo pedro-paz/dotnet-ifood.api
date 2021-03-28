@@ -1,8 +1,11 @@
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
 using AutoMapper;
 using deep.wefood.api.Domain.Entities;
 using deep.wefood.api.Interfaces.Services;
 using deep.wefood.api.Presentation.Dto;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -23,37 +26,31 @@ namespace deep.wefood.api.Presentation
         }
 
         #region GET
-        [HttpGet("{guid}")]
-        public IActionResult Get(string guid)
+        [HttpGet]
+        [Authorize]
+        public IActionResult Get()
         {
-            var user = _serviceUser.FindByGuid(guid);
+            var email = User.Claims.Where(x => x.Type == ClaimTypes.Email).FirstOrDefault()?.Value;
+            var user = _serviceUser.FindByEmail(email);
             var dto = _mapper.Map<UserDto>(user);
             return dto != null ? Ok(JsonConvert.SerializeObject(dto)) : NoContent();
         }
         #endregion
 
-        #region POST
-        [HttpPost]
-        public IActionResult Post([FromBody] UserDto value)
-        {
-            var entity = _mapper.Map<User>(value);
-            _serviceUser.Update(entity);
-            return Ok();
-        }
-        #endregion
-
         #region PUT
         [HttpPut]
+        [Authorize]
         public IActionResult Put(UserDto value)
         {
             var user = _mapper.Map<User>(value);
-            _serviceUser.Add(user);
+            _serviceUser.Update(user);
             return Ok();
         }
         #endregion
 
         #region DELETE
         [HttpDelete("{guid}")]
+        [Authorize]
         public IActionResult Delete(string guid)
         {
             _serviceUser.Delete(guid);

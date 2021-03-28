@@ -94,11 +94,14 @@ namespace deep.wefood.api.Presentation
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "deep.wefood.api.Presentation v1"));
             }
 
+            app.UseHttpsRedirection();
+            app.UseAuthentication();
             app.UseRouting();
             app.UseAuthorization();
-            app.UseAuthentication();
-            app.UseHttpsRedirection();
-            app.UseEndpoints(endpoints => endpoints.MapControllers());
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
+            });
         }
     }
 }
