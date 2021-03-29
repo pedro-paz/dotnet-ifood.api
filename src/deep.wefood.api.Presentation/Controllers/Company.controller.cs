@@ -25,6 +25,7 @@ namespace deep.wefood.api.Presentation.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Get()
         {
             var companies = _serviceCompany.FindAll();
@@ -33,6 +34,7 @@ namespace deep.wefood.api.Presentation.Controllers
         }
 
         [HttpGet("{guid}")]
+        [AllowAnonymous]
         public IActionResult Get(string guid)
         {
             var company = _serviceCompany.FindByGuid(guid);
@@ -41,6 +43,7 @@ namespace deep.wefood.api.Presentation.Controllers
         }
 
         [HttpPost]
+        [Authorize]
         public IActionResult Post([FromBody] CompanyDto value)
         {
             var entity = _mapper.Map<Company>(value);
