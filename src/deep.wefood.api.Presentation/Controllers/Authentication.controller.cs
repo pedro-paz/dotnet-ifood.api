@@ -45,7 +45,7 @@ namespace deep.wefood.api.Presentation.Controllers
         #region POST
         [HttpPost]
         [AllowAnonymous]
-        public IActionResult Post([FromForm] UserDto value)
+        public IActionResult Post([FromQuery] UserDto value)
         {
             var user = _mapper.Map<User>(value);
             _serviceUser.Add(user);
