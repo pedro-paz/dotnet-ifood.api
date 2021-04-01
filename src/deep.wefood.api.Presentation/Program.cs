@@ -25,7 +25,8 @@ namespace deep.wefood.api.Presentation
                     webBuilder.UseStartup<Startup>();
                     webBuilder.UseKestrel(opts =>
                     {
-                        opts.ListenLocalhost(3000);
+                        opts.ListenAnyIP(3000);
+                        // opts.ListenAnyIP(3000);
                         // opts.ListenLocalhost(3001, opts => opts.UseHttps());
                     });
 
