@@ -15,6 +15,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using deep.wefood.api.Presentation.Authentication;
 
 namespace deep.wefood.api.Presentation
 {
@@ -45,6 +46,7 @@ namespace deep.wefood.api.Presentation
             services.AddScoped(typeof(IServiceComplement), typeof(ServiceComplement));
             services.AddScoped(typeof(IServiceCompany), typeof(ServiceCompany));
             services.AddScoped(typeof(IServiceUser), typeof(ServiceUser));
+            services.AddScoped(typeof(IServiceAuthentication), typeof(ServiceAuthentication));
             services.AddSingleton(new MapperConfiguration(cfg =>
             {
                 cfg.AddProfiles(
@@ -58,11 +60,6 @@ namespace deep.wefood.api.Presentation
 
             services.AddControllers();
             services.AddRouting(options => options.LowercaseUrls = true);
-
-            // services.AddSwaggerGen(c =>
-            // {
-            //     c.SwaggerDoc("v1", new OpenApiInfo { Title = "deep.wefood.api.Presentation", Version = "v1" });
-            // });
 
             services.AddAuthentication(x =>
             {
