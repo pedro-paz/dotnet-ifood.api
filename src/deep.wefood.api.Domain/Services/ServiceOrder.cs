@@ -27,9 +27,6 @@ namespace deep.wefood.api.Services
         public void Delete(string guidOrder)
         {
             var order = _orderRepository.Query(x => x.Guid == guidOrder).FirstOrDefault();
-            if (order == null)
-                throw new Exception("Order not found");
-
             _orderRepository.Delete(order);
             _orderRepository.SaveChanges();
         }
@@ -37,18 +34,12 @@ namespace deep.wefood.api.Services
         public Order FindByGuid(string guidOrder)
         {
             var order = _orderRepository.Query(x => x.Guid == guidOrder).FirstOrDefault();
-            if (order == null)
-                throw new Exception("Order not found");
-
             return order;
         }
 
         public IEnumerable<Order> FindByUser(string guidUser)
         {
             var user = _userRepository.Query(x => x.Guid == guidUser).FirstOrDefault();
-            if (user == null)
-                throw new Exception("User not found");
-
             return user.Orders;
         }
 
