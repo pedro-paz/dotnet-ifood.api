@@ -33,9 +33,6 @@ namespace deep.wefood.api.Services
         {
             var company = _companyRepository.Query(company => company.Guid == guid).FirstOrDefault();
 
-            if (company == null)
-                throw new System.Exception("Company not found");
-
             _companyRepository.Delete(company);
             _companyRepository.SaveChanges();
         }
@@ -44,18 +41,12 @@ namespace deep.wefood.api.Services
         {
             var company = _companyRepository.Query(company => company.Guid == guid).FirstOrDefault();
 
-            if (company == null)
-                throw new System.Exception("Company not found");
-
             return company;
         }
 
         public void Update(Company newCompany)
         {
             var oldCompany = _companyRepository.Query(user => user.Guid == newCompany.Guid).FirstOrDefault();
-
-            if (oldCompany == null)
-                throw new System.Exception("Company not found");
 
             oldCompany.Name = newCompany.Name;
 
