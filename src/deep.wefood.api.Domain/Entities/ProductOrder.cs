@@ -6,7 +6,7 @@
         public int IdProduct { get; set; }
         public decimal Price { get; set; }
         public virtual Order Order { get; set; }
-        public virtual Product Product { get; set; }
+        public virtual ProductDetail Product { get; set; }
 
     }
 }

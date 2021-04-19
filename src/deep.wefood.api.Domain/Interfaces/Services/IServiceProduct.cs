@@ -6,11 +6,11 @@ namespace deep.wefood.api.Interfaces.Services
 {
     public interface IServiceProduct
     {
-        IEnumerable<Product> FindByName(string name);
-        Product FindByGuid(string guid);
+        IEnumerable<ProductDetail> FindByName(string name);
+        ProductDetail FindByGuid(string guid);
         void Delete(string guidProduct);
-        void Update(Product product);
-        void Add(CompanyDetail company, Product product);
+        void Update(ProductDetail product);
+        void Add(CompanyDetail company, ProductDetail product);
         IEnumerable<Product> FindByCompany(string companyGuid);
     }
 }

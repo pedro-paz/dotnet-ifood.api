@@ -6,17 +6,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace deep.wefood.api.Infrastructure.Repositories
 {
-    public class ProductPostgresRepository : PostgresRepository<Product>, IProductRepository
+    public class ProductPostgresRepository : PostgresRepository<ProductDetail>, IProductRepository
     {
         public ProductPostgresRepository(PostgresContext context) : base(context)
         {
 
         }
 
-        public Product FindProductDetail(string guidProduct)
+        public ProductDetail FindProductDetail(string guidProduct)
         {
-
-            var product = _context.Set<Product>().Where(x => x.Guid == guidProduct)
+            var product = _context.Set<ProductDetail>().Where(x => x.Guid == guidProduct)
                 .Include(x => x.ComplementGroups)
                 .ThenInclude(x => x.Complements)
                 .FirstOrDefault();

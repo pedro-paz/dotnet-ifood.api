@@ -19,9 +19,9 @@ namespace deep.wefood.api.Services
             _complementGroupsRepository = complementGroupsRepository;
         }
 
-        public void Add(CompanyDetail company, Product product)
+        public void Add(CompanyDetail company, ProductDetail product)
         {
-            company.Products = company.Products ?? new List<Product>();
+            company.Products = company.Products ?? new List<ProductDetail>();
             company.Products.Add(product);
             _companyRepository.Update(company);
             _companyRepository.SaveChanges();
@@ -45,12 +45,19 @@ namespace deep.wefood.api.Services
             if (company == null)
                 throw new System.Exception("Company not found");
 
-            var products = _productRepository.Query(x => x.IdCompany == company.Id);
+            var products = _productRepository
+                .Query(x => x.IdCompany == company.Id)
+                .Select(x => new Product()
+                {
+                    Name = x.Name,
+                    Description = x.Description,
+                    Guid = x.Guid
+                });
 
             return products;
         }
 
-        public Product FindByGuid(string guid)
+        public ProductDetail FindByGuid(string guid)
         {
             var product = _productRepository.FindProductDetail(guid);
 
@@ -60,12 +67,12 @@ namespace deep.wefood.api.Services
             return product;
         }
 
-        public IEnumerable<Product> FindByName(string name)
+        public IEnumerable<ProductDetail> FindByName(string name)
         {
             return _productRepository.Query(x => x.Name == name);
         }
 
-        public void Update(Product product)
+        public void Update(ProductDetail product)
         {
             throw new System.NotImplementedException();
         }

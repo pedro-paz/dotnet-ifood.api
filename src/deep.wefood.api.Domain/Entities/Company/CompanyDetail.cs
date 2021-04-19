@@ -11,7 +11,7 @@ namespace deep.wefood.api.Domain.Entities
         public string Zip { get; set; }
         public string State { get; set; }
         public short StreetNumber { get; set; }
-        public virtual ICollection<Product> Products { get; set; }
+        public virtual ICollection<ProductDetail> Products { get; set; }
 
     }
 
