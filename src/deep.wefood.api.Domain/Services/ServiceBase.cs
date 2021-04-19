@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using deep.wefood.api.Domain.Entities;
 using deep.wefood.api.Domain.Interfaces.Generics;
 
@@ -34,7 +35,7 @@ namespace deep.wefood.api.Services
             _repository.Delete(entity);
         }
 
-        public virtual IEnumerable<T> Query(Func<T, bool> predicate)
+        public virtual IEnumerable<T> Query(Expression<Func<T, bool>> predicate)
         {
             return _repository.Query(predicate);
         }

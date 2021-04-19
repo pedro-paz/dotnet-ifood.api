@@ -1,6 +1,7 @@
 ﻿
 using System.Collections.Generic;
 using System.Linq;
+using AutoMapper;
 using deep.wefood.api.Domain.Entities;
 using deep.wefood.api.Domain.Interfaces.Generics;
 using deep.wefood.api.Interfaces.Services;
@@ -9,21 +10,22 @@ namespace deep.wefood.api.Services
 {
     public class ServiceCompany : IServiceCompany
     {
-        private IRepository<Company> _companyRepository;
+        private IRepository<CompanyDetail> _companyRepository;
+        private IMapper _mapper;
 
-        public ServiceCompany(IRepository<Company> companyRepository)
+        public ServiceCompany(IRepository<CompanyDetail> companyRepository, IMapper mapper)
         {
             _companyRepository = companyRepository;
+            _mapper = mapper;
         }
 
-        public void Add(Company company)
+        public void Add(CompanyDetail company)
         {
             _companyRepository.Add(company);
             _companyRepository.SaveChanges();
         }
 
-
-        public void AddRange(IEnumerable<Company> companies)
+        public void AddRange(IEnumerable<CompanyDetail> companies)
         {
             companies.ToList().ForEach(company => _companyRepository.Add(company));
             _companyRepository.SaveChanges();
@@ -37,14 +39,14 @@ namespace deep.wefood.api.Services
             _companyRepository.SaveChanges();
         }
 
-        public Company FindByGuid(string guid)
+        public CompanyDetail FindByGuid(string guid)
         {
             var company = _companyRepository.Query(company => company.Guid == guid).FirstOrDefault();
 
             return company;
         }
 
-        public void Update(Company newCompany)
+        public void Update(CompanyDetail newCompany)
         {
             var oldCompany = _companyRepository.Query(user => user.Guid == newCompany.Guid).FirstOrDefault();
 
@@ -61,8 +63,14 @@ namespace deep.wefood.api.Services
 
         public IEnumerable<Company> FindAll()
         {
-            return _companyRepository.FindAll();
+            return _companyRepository
+                .Select(x => new Company()
+                {
+                    Name = x.Name,
+                    Guid = x.Guid,
+                    MinimumOrderValue = x.MinimumOrderValue,
+                    Rating = x.Rating
+                });
         }
-
     }
 }

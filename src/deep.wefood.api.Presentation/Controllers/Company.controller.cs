@@ -38,32 +38,32 @@ namespace deep.wefood.api.Presentation.Controllers
         public IActionResult Get(string guid)
         {
             var company = _serviceCompany.FindByGuid(guid);
-            var dto = _mapper.Map<CompanyDto>(company);
+            var dto = _mapper.Map<CompanyDetailDto>(company);
             return company != null ? Ok(JsonConvert.SerializeObject(dto)) : NoContent();
         }
 
         [HttpPost]
         [Authorize]
-        public IActionResult Post([FromBody] CompanyDto value)
+        public IActionResult Post([FromBody] CompanyDetailDto value)
         {
-            var entity = _mapper.Map<Company>(value);
+            var entity = _mapper.Map<CompanyDetail>(value);
             _serviceCompany.Add(entity);
             return Ok();
         }
 
         [HttpPost, Route("/companies")]
-        public IActionResult Post([FromBody] IEnumerable<CompanyDto> value)
+        public IActionResult Post([FromBody] IEnumerable<CompanyDetailDto> value)
         {
-            var entity = _mapper.Map<IEnumerable<Company>>(value);
+            var entity = _mapper.Map<IEnumerable<CompanyDetail>>(value);
             _serviceCompany.AddRange(entity);
             return Ok();
         }
 
 
         [HttpPut]
-        public IActionResult Put([FromForm] CompanyDto value)
+        public IActionResult Put([FromForm] CompanyDetailDto value)
         {
-            var company = _mapper.Map<Company>(value);
+            var company = _mapper.Map<CompanyDetail>(value);
             _serviceCompany.Update(company);
             return Ok();
         }

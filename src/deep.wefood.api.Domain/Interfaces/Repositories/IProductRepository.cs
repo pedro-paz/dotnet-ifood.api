@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using deep.wefood.api.Domain.Entities;
 
 namespace deep.wefood.api.Domain.Interfaces.Generics

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.Linq;
 using deep.wefood.api.Domain.Entities;
 using deep.wefood.api.Domain.Interfaces.Generics;
@@ -14,6 +15,7 @@ namespace deep.wefood.api.Infrastructure.Repositories
 
         public Product FindProductDetail(string guidProduct)
         {
+
             var product = _context.Set<Product>().Where(x => x.Guid == guidProduct)
                 .Include(x => x.ComplementGroups)
                 .ThenInclude(x => x.Complements)
@@ -21,5 +23,6 @@ namespace deep.wefood.api.Infrastructure.Repositories
 
             return product;
         }
+
     }
 }

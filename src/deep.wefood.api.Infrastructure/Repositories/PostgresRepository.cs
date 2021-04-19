@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 
 namespace deep.wefood.api.Infrastructure.Repositories
 {
@@ -39,9 +40,13 @@ namespace deep.wefood.api.Infrastructure.Repositories
             return _context.Set<TEntity>().Find(id);
         }
 
-        public IEnumerable<TEntity> Query(Func<TEntity, bool> predicate)
+        public IQueryable<TEntity> Query(Expression<Func<TEntity, bool>> predicate)
         {
-            return _context.Set<TEntity>().Where(predicate);
+            return _context.Set<TEntity>().Where(predicate).AsQueryable();
+        }
+        public IQueryable<T2> Select<T2>(Expression<Func<TEntity, T2>> selector)
+        {
+            return _context.Set<TEntity>().Select(selector).AsQueryable();
         }
 
         public void Delete(TEntity obj)
@@ -64,6 +69,7 @@ namespace deep.wefood.api.Infrastructure.Repositories
             var entity = _context.Set<TEntity>().Where(x => x.Id == id).FirstOrDefault();
             return entity;
         }
+
 
     }
 }

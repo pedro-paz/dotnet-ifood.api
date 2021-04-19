@@ -5,9 +5,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace deep.wefood.api.Infrastructure.Configuration
 {
-    public class CompanyConfiguration : IEntityTypeConfiguration<Company>
+    public class CompanyConfiguration : IEntityTypeConfiguration<CompanyDetail>
     {
-        public void Configure(EntityTypeBuilder<Company> builder)
+        public void Configure(EntityTypeBuilder<CompanyDetail> builder)
         {
             builder.ToTable("companies");
 

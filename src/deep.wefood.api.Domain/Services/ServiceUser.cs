@@ -9,9 +9,9 @@ namespace deep.wefood.api.Services
     public class ServiceUser : IServiceUser
     {
         private IRepository<User> _userRepository;
-        private IRepository<Company> _companyRepository;
+        private IRepository<CompanyDetail> _companyRepository;
 
-        public ServiceUser(IRepository<User> userRepository, IRepository<Company> companyRepository)
+        public ServiceUser(IRepository<User> userRepository, IRepository<CompanyDetail> companyRepository)
         {
             _userRepository = userRepository;
             _companyRepository = companyRepository;
@@ -20,8 +20,8 @@ namespace deep.wefood.api.Services
         public User Authenticate(string email, string senha)
         {
             var user = _userRepository.Query(x =>
-              x.Email.Trim().ToLower() == email?.Trim().ToLower() &&
-              x.Password.Trim().ToLower() == senha?.Trim().ToLower()
+              x.Email.Trim().ToLower() == email.Trim().ToLower() &&
+              x.Password.Trim().ToLower() == senha.Trim().ToLower()
             ).FirstOrDefault();
 
             // if (user == null)
@@ -40,7 +40,7 @@ namespace deep.wefood.api.Services
         public User FindByEmail(string email)
         {
             return _userRepository.Query(x =>
-              x.Email.ToLower() == email?.ToLower()
+              x.Email.ToLower() == email.ToLower()
             ).FirstOrDefault();
         }
 

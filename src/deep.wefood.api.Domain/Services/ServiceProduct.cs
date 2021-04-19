@@ -9,17 +9,17 @@ namespace deep.wefood.api.Services
     public class ServiceProduct : IServiceProduct
     {
         private IProductRepository _productRepository;
-        private IRepository<Company> _companyRepository;
+        private IRepository<CompanyDetail> _companyRepository;
         private IRepository<ComplementGroup> _complementGroupsRepository;
 
-        public ServiceProduct(IProductRepository productRepository, IRepository<Company> companyRepository, IRepository<ComplementGroup> complementGroupsRepository)
+        public ServiceProduct(IProductRepository productRepository, IRepository<CompanyDetail> companyRepository, IRepository<ComplementGroup> complementGroupsRepository)
         {
             _productRepository = productRepository;
             _companyRepository = companyRepository;
             _complementGroupsRepository = complementGroupsRepository;
         }
 
-        public void Add(Company company, Product product)
+        public void Add(CompanyDetail company, Product product)
         {
             company.Products = company.Products ?? new List<Product>();
             company.Products.Add(product);

@@ -6,11 +6,11 @@ namespace deep.wefood.api.Interfaces.Services
 {
     public interface IServiceCompany
     {
-        Company FindByGuid(string guid);
-        void Update(Company newCompany);
+        CompanyDetail FindByGuid(string guid);
+        void Update(CompanyDetail newCompany);
         void Delete(string guid);
-        void Add(Company company);
-        void AddRange(IEnumerable<Company> company);
+        void Add(CompanyDetail company);
+        void AddRange(IEnumerable<CompanyDetail> company);
         void SaveChanges();
         IEnumerable<Company> FindAll();
     }
