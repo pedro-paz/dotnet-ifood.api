@@ -48,20 +48,15 @@ sudo docker run -p 8080:3000 deep/wefood.api:1
 
 ## RESTful URLs
 
-| HTTP METHOD   | POST              | GET                   | PUT               | DELETE         |
-| ------------- | ----------------- | --------------------- | ----------------- | -------------- |
-| CRUD OP       | UPDATE            | READ                  | CREATE            | DELETE         |
-| /auth      | N/A               | Recuperar token JWT    | N/A               | N/A            |
-| /company      | N/A               | Recuperar empresas    | N/A               | N/A            |
-| /company/1234 | Atualizar Empresa | Recuperar uma empresa | Atualizar Empresa | Remove Empresa |
-| /company/1234/product | N/A               | Recuperar produtos de uma empresa     | N/A  | N/A            |
-| /order        | N/A               | Recuperar pedidos     | Adicionar Pedido  | N/A            |
-| /order/1234   | Atualizar Pedido  | Recuperar uma empresa | N/A               | Remover Pedido |
-| /product   | N/A  | N/A | Adicionar produto               | N/A |
-| /product/1234   | Atualizar Produto  | Recuperar produto | N/A               | Remover Produto |
-| /user   | Atualizar usuário autenticado  | Recuperar usuário autenticado | N/A               | N/A |
-
-(Example from Web API Design, by Brian Mulloy, Apigee.)
-
-
-
+| HTTP METHOD           | POST                          | GET                               | PUT               | DELETE          |
+| --------------------- | ----------------------------- | --------------------------------- | ----------------- | --------------- |
+| CRUD OP               | UPDATE                        | READ                              | CREATE            | DELETE          |
+| /auth                 | N/A                           | Recuperar token JWT               | N/A               | N/A             |
+| /company              | N/A                           | Recuperar empresas                | N/A               | N/A             |
+| /company/1234         | Atualizar Empresa             | Recuperar uma empresa             | Atualizar Empresa | Remove Empresa  |
+| /company/1234/product | N/A                           | Recuperar produtos de uma empresa | N/A               | N/A             |
+| /order                | N/A                           | Recuperar pedidos                 | Adicionar Pedido  | N/A             |
+| /order/1234           | Atualizar Pedido              | Recuperar uma empresa             | N/A               | Remover Pedido  |
+| /product              | N/A                           | N/A                               | Adicionar produto | N/A             |
+| /product/1234         | Atualizar Produto             | Recuperar produto                 | N/A               | Remover Produto |
+| /user                 | Atualizar usuário autenticado | Recuperar usuário autenticado     | N/A               | N/A             |
